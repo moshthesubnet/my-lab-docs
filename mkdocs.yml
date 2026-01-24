@@ -17,3 +17,17 @@ nav:
   - My Lab: 
       - Overview: lab/overview.md
       - Proxmox: lab/proxmox.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/moshthesubnet
+      name: Follow the Pit on Instagram
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/skylerkingnetwork
+    - icon: fontawesome/brands/github
+      link: https://github.com/theSkyKing30
+
+copyright: |
+  &copy; 2026 moshthesubnet. All rights reserved. <br>
+  Built with MkDocs and a DIY punk attitude.
