@@ -1,1 +1,20 @@
+site_name: MoshtheSubnet
+site_url: https://moshthesubnet.com
 
+theme:
+  name: material
+  palette: 
+    # This sets it to Dark Mode by default
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.tabs  # Adds a nice top menu
+    - search.suggest   # Makes your lab docs searchable
+
+nav:
+  - Home: index.md
+  - My Lab: 
+    - Overview: lab/overview.md
+    - Proxmox Setup: lab/proxmox.md
+  - Accomplishments: bio.md
