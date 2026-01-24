@@ -31,4 +31,4 @@ I use my homelab to mirror enterprise environments. My current setup includes:
 ## 📬 Connect With Me
 * **Instagram:** [@moshthesubnet](https://instagram.com/moshthesubnet)
 * **LinkedIn:** www.linkedin.com/in/skylerkingnetwork
-* **GitHub:** moshthesubnet
+* **GitHub:** https://github.com/moshthesubnet
