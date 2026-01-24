@@ -1,4 +1,4 @@
-# Welcome to Moshthesubnet 🎸💻
+# Welcome to Mosh the Subnet 🎸💻
 
 I'm a Network Support Specialist and IT professional based in UT. I specialize in bridging the gap between complex infrastructure and efficient automation. This site serves as a live documentation of my homelab, my career journey, and my ongoing projects in networking and Python.
 
