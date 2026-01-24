@@ -1,6 +1,6 @@
 # my-lab-docs
 
-Project Title: # Moshthesubnet Lab Documentation
+## Project Title: # Moshthesubnet Lab Documentation
 
 The "Why":  A central hub for my homelab documentation, networking projects, and professional bio.
 
