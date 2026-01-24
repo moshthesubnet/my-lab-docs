@@ -5,7 +5,7 @@ I'm a Network Support Specialist and IT professional based in UT. I specialize i
 ---
 
 ## 🚀 About Me
-After spending the majority of my professional career working in the medical industry, I pivoted to Network Engineering, where I manage infrastructure for government-contracted projects. I'm a firm believer in the "Lab Everything" philosophy—if I’m not configuring it at work, I’m probably breaking it (and fixing it) in my Proxmox cluster at home.
+After spending the majority of my professional career working in the medical industry, I pivoted to Network Engineering, where I manage infrastructure for government-contracted projects. I'm a firm believer in the "Lab Everything" philosophy-if I’m not configuring it at work, I’m probably breaking it (and fixing it) in my Proxmox cluster at home.
 
 When I'm not in the terminal, you can find me at a punk rock show or tinkering with my automation workflows.
 
