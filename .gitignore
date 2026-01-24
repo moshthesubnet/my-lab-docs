@@ -1,1 +1,15 @@
+# MkDocs build directory (Cloudflare builds this automatically)
+site/
 
+# Python virtual environments (if you test locally)
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables (just in case you use them later)
+.env
