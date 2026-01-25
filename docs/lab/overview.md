@@ -27,9 +27,11 @@ My lab is built on three core pillars:
 ---
 
 ## 📡 Networking Philosophy
+
 I treat my home network like a mini-enterprise. This means:
-* **Zero-Trust (Mostly):** I isolate IoT and Lab devices from my "Trusted" personal data.
-* **Static Everything:** Core infrastructure (Servers, Switches, APs) is assigned static IPs outside of the DHCP pool.
+
+* **Zero-Trust (Mostly):** I isolate IoT and Lab devices from my "Trusted" personal data to reduce the attack surface.
+* **Static Everything:** Core infrastructure (Servers, Switches, APs) is assigned static IPs outside of the DHCP pool for reliability.
 * **Documentation First:** If it isn't documented here, it doesn't exist.
 
 ---
