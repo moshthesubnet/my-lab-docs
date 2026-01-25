@@ -19,12 +19,23 @@ When I'm not in the terminal, you can find me at a punk rock show or tinkering w
 
 ---
 
-## 🛠️ The Stack (My Lab)
-I use my homelab to mirror enterprise environments. My current setup includes:
-* **Virtualization:** Proxmox VE, VMware Workstation Pro
-* **Networking:** OPNsense(firewall), Cisco, UniFi, VLAN segmentation, and OSPF testing.
-* **Storage:** TrueNAS Scale
-* **Containers:** Docker and Podman.
+## 🛠️ The Tech Stack
+
+### **Virtualization & Compute**
+* **Proxmox VE:** My primary hypervisor for enterprise-grade virtualization.
+* **VMware Workstation Pro:** Used for local testing and rapid prototyping of virtual machines.
+* **Containers:**
+    * **Docker:** Running core services in a consolidated 2-node cluster.
+    * **Podman:** Utilized for rootless container management and security testing.
+
+### **Networking & Security**
+* **OPNsense:** Acting as the primary perimeter firewall and routing engine.
+* **Cisco & UniFi:** A hybrid switching environment utilizing:
+    * **VLAN Segmentation:** Isolating Management, IoT, and Lab traffic.
+    * **OSPF Testing:** Experimenting with dynamic routing protocols across the lab.
+
+### **Storage**
+* **TrueNAS Scale:** Centralized ZFS storage providing NFS and SMB shares to the entire cluster.
 
 ---
 
