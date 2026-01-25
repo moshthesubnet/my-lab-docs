@@ -35,12 +35,14 @@ I treat my home network like a mini-enterprise. This means:
 ---
 
 ## 🛠️ Current Tech Stack
+
 These are the tools I am currently "moshing" with:
+
 * **Languages:** Python (Learning/Scripting), YAML (Automation)
 * **Platforms:** n8n, Docker, Proxmox, Podman
 * **Network Protocols:** OSPF, VLAN (802.1Q), DHCP, DNS
 * **Monitoring:** Uptime Kuma
-
+  
 ---
 
 ## 📈 Recent Updates
