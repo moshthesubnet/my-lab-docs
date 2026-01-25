@@ -40,6 +40,7 @@ When I'm not in the terminal, you can find me at a punk rock show or tinkering w
 ---
 
 ## 📬 Connect With Me
+
 * **Instagram:** [@moshthesubnet](https://instagram.com/moshthesubnet)
-* **LinkedIn:** www.linkedin.com/in/skylerkingnetwork
-* **GitHub:** https://github.com/moshthesubnet
+* **LinkedIn:** [skylerkingnetwork](https://www.linkedin.com/in/skylerkingnetwork)
+* **GitHub:** [moshthesubnet](https://github.com/moshthesubnet)
