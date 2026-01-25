@@ -1,4 +1,4 @@
-# ⚡ The Person Behind the Pit
+# ⚡ The Person Behind The Subnet
 
 I’m a Network Engineering student, a career changer, and a lifelong fan of the punk rock/emo DIY ethic. Based in Utah, I’ve spent the last few years transitioning from the medical industry.
 
