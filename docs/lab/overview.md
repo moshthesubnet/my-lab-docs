@@ -1,6 +1,6 @@
 # 🗺️ Lab Overview
 
-Welcome to the heart of **The Pit**. My homelab is a hybrid environment designed for high-availability services, network experimentation, and professional development.
+Welcome to the heart of **The Subnet**. My homelab is a hybrid environment designed for high-availability services, network experimentation, and professional development.
 
 The primary goal of this lab is to mirror enterprise-grade networking and virtualization in a residential setting, providing a safe "sandbox" to test configurations before they ever reach a production environment.
 
