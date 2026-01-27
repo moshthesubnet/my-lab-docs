@@ -18,7 +18,7 @@ nav:
       - Overview: lab/overview.md
       - Proxmox: lab/proxmox.md
       - Guides:
-          -Pi-hole LXC: guides/pihole-lxc.md
+          - Pi-hole LXC: guides/pihole-lxc.md
 
 extra:
   social:
