@@ -23,13 +23,13 @@ Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By interceptin
 
 * Network:
 
-** Set IPv4 to Static.
+  * Set IPv4 to Static.
 
-** IPv4/CIDR: 192.168.1.5/24 (Adjust to your network).
+  * IPv4/CIDR: 192.168.1.5/24 (Adjust to your network).
 
-**Gateway: 192.168.1.1 (Your router).
+  * Gateway: 192.168.1.1 (Your router).
 
-**DNS: Use host settings.
+  * DNS: Use host settings.
 
 ### 3. Automated Installation
 Start the container, open the Console, and log in as root. Run the following commands:
