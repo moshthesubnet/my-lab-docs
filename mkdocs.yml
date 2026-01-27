@@ -11,6 +11,9 @@ theme:
     - navigation.tabs
     - search.suggest
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Home: index.md
   - About & Accomplishments: bio.md
