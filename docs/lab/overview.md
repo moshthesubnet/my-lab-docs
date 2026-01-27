@@ -48,9 +48,10 @@ These are the tools I am currently "moshing" with:
 ---
 
 ## 📈 Recent Updates
+* **Jan 2026:** Deployed LXC container to run MkDocs to locally test website.
 * **Jan 2026:** Fully adopted the **U7 Pro** Access Point for Wi-Fi 7 testing.
 * **Jan 2026:** Migrated and consolidated Docker infrastructure for better resource management.
-* **Dec 2025:** Completed the "3-Part Subnetting" educational series for Instagram.
+
 
 ---
 
