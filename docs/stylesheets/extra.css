@@ -1,0 +1,26 @@
+/* Custom Admonition Glow */
+.md-typeset .admonition, 
+.md-typeset details {
+  border-width: 2px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(63, 81, 181, 0.2); /* Soft glow */
+  border-left-width: .4rem;
+}
+
+/* Specific styling for 'info' boxes */
+.md-typeset .admonition.info {
+  border-color: #3f51b5; /* Your Indigo primary color */
+  box-shadow: 0 0 12px rgba(63, 81, 181, 0.4);
+}
+
+/* Specific styling for 'bug' (Troubleshooting) boxes */
+.md-typeset .admonition.bug {
+  border-color: #ff1744; /* A punk rock red/pink */
+  box-shadow: 0 0 12px rgba(255, 23, 68, 0.4);
+}
+
+/* Specific styling for 'tip' boxes */
+.md-typeset .admonition.tip {
+  border-color: #00e676; /* Neon Green */
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.4);
+}
