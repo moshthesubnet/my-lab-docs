@@ -33,7 +33,7 @@ extra:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences # Recommended for code blocks
+  - pymdownx.superfences
   
 copyright: |
   &copy; 2026 moshthesubnet. All rights reserved. <br>
