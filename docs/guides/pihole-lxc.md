@@ -35,12 +35,14 @@ Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By interceptin
 Start the container, open the Console, and log in as root. Run the following commands:
 
 #### Update and install curl
-```bash
+```
 apt update && apt upgrade -y
 apt install curl -y
+```
 Run the official Pi-hole installer
-```bash
+```
 curl -sSL https://install.pi-hole.net | bash
+```
 ### 4. Configuration Wizard
 Follow the on-screen prompts to complete the setup.
 
