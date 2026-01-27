@@ -1,14 +1,14 @@
-🛡️ Service Spotlight: Pi-hole (LXC Deployment)
+# 🛡️ Service Spotlight: Pi-hole (LXC Deployment)
 Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By intercepting DNS requests for known ad servers and trackers, it prevents them from ever reaching your devices.
 
-1. Prerequisites
+### 1. Prerequisites
 Proxmox VE installed and reachable.
 
 Static IP Address reserved (e.g., 192.168.1.5).
 
 Debian 12 or Ubuntu 24.04 Standard CT Template.
 
-2. Create the LXC Container
+### 2. Create the LXC Container
 Log in to your Proxmox Web UI and click Create CT.
 
 General: Set Hostname (e.g., pihole-01) and a root password.
@@ -31,7 +31,7 @@ Gateway: 192.168.1.1 (Your router).
 
 DNS: Use host settings.
 
-3. Automated Installation
+### 3. Automated Installation
 Start the container, open the Console, and log in as root. Run the following commands:
 
 Update and install curl
@@ -41,7 +41,7 @@ apt install curl -y
 Run the official Pi-hole installer
 Bash
 curl -sSL https://install.pi-hole.net | bash
-4. Configuration Wizard
+### 4. Configuration Wizard
 Follow the on-screen prompts to complete the setup.
 
 🔗 Official Resources
