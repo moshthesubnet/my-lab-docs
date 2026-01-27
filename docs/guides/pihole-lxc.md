@@ -1,4 +1,4 @@
-# 🛡️ Service Spotlight: Pi-hole (LXC Deployment)
+# 🛡️ Pi-hole (LXC Deployment)
 Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By intercepting DNS requests for known ad servers and trackers, it prevents them from ever reaching your devices.
 
 ### 1. Prerequisites
