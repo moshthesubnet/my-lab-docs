@@ -2,11 +2,11 @@
 Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By intercepting DNS requests for known ad servers and trackers, it prevents them from ever reaching your devices.
 
 ### 1. Prerequisites
-* ** Proxmox VE installed and reachable.
+*  Proxmox VE installed and reachable.
 
-* ** Static IP Address reserved (e.g., 192.168.1.5).
+*  Static IP Address reserved (e.g., 192.168.1.5).
 
-* ** Debian 12 or Ubuntu 24.04 Standard CT Template.
+*  Debian 12 or Ubuntu 24.04 Standard CT Template.
 
 ### 2. Create the LXC Container
 Log in to your Proxmox Web UI and click Create CT.
