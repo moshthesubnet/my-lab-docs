@@ -8,8 +8,6 @@
 ## 🛡️ Service Spotlight: Pi-hole (LXC Deployment)
 Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By intercepting DNS requests for known ad servers and trackers, it prevents them from ever reaching your devices.
 
-!!! quote "The DIY Ethos" In a world of late-stage surveillance capitalism, running your own DNS is a revolutionary act. You aren't just blocking ads; you are reclaiming your digital privacy from the corporate tracking machine. DIY or Die.
-
 1. Prerequisites
 Proxmox VE installed and reachable.
 
