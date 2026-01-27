@@ -9,27 +9,27 @@ Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By interceptin
 *  Debian 12 or Ubuntu 24.04 Standard CT Template.
 
 ### 2. Create the LXC Container
-Log in to your Proxmox Web UI and click Create CT.
+* Log in to your Proxmox Web UI and click Create CT.
 
-General: Set Hostname (e.g., pihole-01) and a root password.
+* General: Set Hostname (e.g., pihole-01) and a root password.
 
-Template: Select your Linux distribution template.
+* Template: Select your Linux distribution template.
 
-Root Disk: 8GB is plenty.
+* Root Disk: 8GB is plenty.
 
-CPU: 1 Core (Pi-hole is extremely lightweight).
+* CPU: 1 Core (Pi-hole is extremely lightweight).
 
-Memory: 512MB RAM (256MB Swap).
+* Memory: 512MB RAM (256MB Swap).
 
-Network:
+* Network:
 
-Set IPv4 to Static.
+** Set IPv4 to Static.
 
-IPv4/CIDR: 192.168.1.5/24 (Adjust to your network).
+** IPv4/CIDR: 192.168.1.5/24 (Adjust to your network).
 
-Gateway: 192.168.1.1 (Your router).
+**Gateway: 192.168.1.1 (Your router).
 
-DNS: Use host settings.
+**DNS: Use host settings.
 
 ### 3. Automated Installation
 Start the container, open the Console, and log in as root. Run the following commands:
