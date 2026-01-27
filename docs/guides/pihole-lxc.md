@@ -52,7 +52,8 @@ Follow the on-screen prompts to complete the setup.
 🛠️ Troubleshooting
 If you lose the admin password generated at the end of the install, run this command in the LXC console to set a new one:
 
-Bash
+```
 pihole -a -p
+```
 
 (Optional) Set Secondary DNS to 1.1.1.1 for a fallback if your lab goes down.
