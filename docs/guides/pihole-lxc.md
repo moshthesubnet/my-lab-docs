@@ -34,12 +34,12 @@ DNS: Use host settings.
 ### 3. Automated Installation
 Start the container, open the Console, and log in as root. Run the following commands:
 
-Update and install curl
-Bash
+#### Update and install curl
+```bash
 apt update && apt upgrade -y
 apt install curl -y
 Run the official Pi-hole installer
-Bash
+```bash
 curl -sSL https://install.pi-hole.net | bash
 ### 4. Configuration Wizard
 Follow the on-screen prompts to complete the setup.
