@@ -28,6 +28,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/moshthesubnet
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences # Recommended for code blocks
+  
 copyright: |
   &copy; 2026 moshthesubnet. All rights reserved. <br>
   Built with MkDocs and a DIY punk attitude.
