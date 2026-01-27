@@ -1,4 +1,4 @@
-## 🛡️ Service Spotlight: Pi-hole (LXC Deployment)
+🛡️ Service Spotlight: Pi-hole (LXC Deployment)
 Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By intercepting DNS requests for known ad servers and trackers, it prevents them from ever reaching your devices.
 
 1. Prerequisites
@@ -21,7 +21,9 @@ CPU: 1 Core (Pi-hole is extremely lightweight).
 
 Memory: 512MB RAM (256MB Swap).
 
-Network: * Set IPv4 to Static.
+Network:
+
+Set IPv4 to Static.
 
 IPv4/CIDR: 192.168.1.5/24 (Adjust to your network).
 
@@ -30,39 +32,17 @@ Gateway: 192.168.1.1 (Your router).
 DNS: Use host settings.
 
 3. Automated Installation
-Start the container, open the Console, and log in as root. Run the following command:
+Start the container, open the Console, and log in as root. Run the following commands:
 
+Update and install curl
 Bash
-# Update and install curl
 apt update && apt upgrade -y
 apt install curl -y
-
-# Run the official Pi-hole installer
+Run the official Pi-hole installer
+Bash
 curl -sSL https://install.pi-hole.net | bash
-
 4. Configuration Wizard
-Follow the on-screen prompts:
-
-Interface: eth0
-
-Upstream DNS: Select your preferred provider (Cloudflare, Google, etc.).
-
-Blocklists: Keep the default StevenBlack list (you can add more later).
-
-Protocols: Enable both IPv4 and IPv6 if applicable.
-
-Web Interface: Enable.
-
-Logging: Enable (Crucial for seeing what’s being blocked).
-
-5. Network Integration
-To apply the "Mosh" to your whole network, you must tell your devices to use the Pi-hole for DNS.
-
-Log in to your Router Admin Interface.
-
-Find the DHCP Settings.
-
-Change the Primary DNS Server to the Static IP of your Pi-hole LXC (192.168.1.5).
+Follow the on-screen prompts to complete the setup.
 
 🔗 Official Resources
 !!! info "Documentation" * Pi-hole Official Site * Official Installation Guide * Post-Installation Steps * Pi-hole CLI Command Reference
