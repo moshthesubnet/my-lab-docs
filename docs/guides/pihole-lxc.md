@@ -1,10 +1,3 @@
-!!! info "Official Resources"
-    Before you start, it's always best to check the source. Here are the official docs:
-
-    * [Official Pi-hole Website](https://pi-hole.net/)
-    * [LXC Installation Guide](https://docs.pi-hole.net/main/basic-install/)
-    * [Troubleshooting FAQ](https://docs.pi-hole.net/main/post-install/)
-
 ## 🛡️ Service Spotlight: Pi-hole (LXC Deployment)
 Pi-hole is a network-wide ad blocker that acts as a DNS sinkhole. By intercepting DNS requests for known ad servers and trackers, it prevents them from ever reaching your devices.
 
@@ -70,5 +63,14 @@ Log in to your Router Admin Interface.
 Find the DHCP Settings.
 
 Change the Primary DNS Server to the Static IP of your Pi-hole LXC (192.168.1.5).
+
+🔗 Official Resources
+!!! info "Documentation" * Pi-hole Official Site * Official Installation Guide * Post-Installation Steps * Pi-hole CLI Command Reference
+
+🛠️ Troubleshooting
+If you lose the admin password generated at the end of the install, run this command in the LXC console to set a new one:
+
+Bash
+pihole -a -p
 
 (Optional) Set Secondary DNS to 1.1.1.1 for a fallback if your lab goes down.
