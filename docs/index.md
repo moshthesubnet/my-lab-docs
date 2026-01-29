@@ -1,6 +1,6 @@
 # Welcome to Mosh The Subnet 🎸🤘
 
-I'm a Network Support Specialist and IT professional based in UT. I specialize in bridging the gap between complex infrastructure and efficient automation. This site serves as a live documentation of my homelab, my career journey, and my ongoing projects in networking and Python.
+I am a Network Support Specialist and Cisco Certified Network Associate (CCNA) based in UT. I specialize in enterprise networking, automation, and virtualization—sharing my learning journey through my homelab docs.
 
 ---
 
