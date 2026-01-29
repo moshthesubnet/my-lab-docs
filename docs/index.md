@@ -48,6 +48,7 @@ graph TD
     %% Devices connected to Unifi Switch
     MainSwitch --> AP[Unifi AP]
     MainSwitch --> Server[Proxmox Node]
+
     %% Devices connected to Cisco Switch
     LabSwitch --> Server[Raspberry Pi 4]
 ```
