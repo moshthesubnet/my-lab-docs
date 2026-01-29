@@ -1,41 +1,48 @@
 # Welcome to Mosh The Subnet 🎸🤘
 
-I am a Network Support Specialist and Cisco Certified Network Associate (CCNA) based in UT. I specialize in enterprise networking, automation, and virtualization—sharing my learning journey through my homelab docs.
+I'm **Skyler King**—a Network Support Specialist, homelab enthusiast, and emo/punk rock fan.
+
+I document my journey from "it works on my machine" to enterprise-grade network engineering here. Whether it's breaking OSPF in the lab or fixing critical infrastructure in production, this is where I write it down.
 
 ---
 
-## 🚀 About Me
-After spending the majority of my professional career working in the medical industry, I pivoted to Network Engineering, where I manage infrastructure for government-contracted projects. I'm a firm believer in the "Lab Everything" philosophy-if I’m not configuring it at work, I’m probably breaking it (and fixing it) in my Proxmox cluster at home.
-
-When I'm not in the terminal, you can find me at a punk rock show or tinkering with my automation workflows.
-
----
-
-## 🏆 Key Accomplishments
-* **Network Transition:** Successfully negotiated and transitioned into a Network Support Specialist role after obtaining my CCNA and supporting a mid-sized medical device manufacturing company as an IT intern.
-* **Education:** Working on completing my Bachelor’s degree from WGU (Western Governors University), specializing in Network/Cloud Engineering.
-* **Automation:** Developed custom n8n workflows to automate personal productivity and lab management.
-* **Content Creation:** Founder of **@moshthesubnet**, an Instagram community focused on making networking/cloud concepts accessible for career changers with a little bit of punk rock/emo flare.
+## ⚡ Current Status
+**Role:** Network Support Specialist 
+**Focus:** Cisco Enterprise Networking, Automation, & Network Security
+**School:** WGU (B.S. Network Engineering & Security - Cisco Track)
 
 ---
 
-## 🛠️ The Tech Stack
+## 🏆 Recent Wins (Resume Highlights)
+*Real-world problems I've solved recently:*
 
-### **Virtualization & Compute**
-* **Proxmox VE:** My primary hypervisor for enterprise-grade virtualization.
-* **VMware Workstation Pro:** Used for local testing and rapid prototyping of virtual machines.
-* **Containers:**
-    * **Docker:** Running core services in a consolidated 2-node cluster.
-    * **Podman:** Utilized for rootless container management and security testing.
+* **🚑 Critical Infrastructure Rescue:** Saved ~15k in operational delays by diagnosing and fixing a critical IPsec VPN tunnel failure that had downed a production licensing server.
+* **🛡️ Network Segmentation:** Improved network performance by **30%** and reduced security risks by migrating a flat Layer 2 network to a secure, 5-VLAN segmented architecture.
+* **🚀 Rapid Site Deployment:** Built the IT infrastructure for a newly acquired office (25 workstations + conferencing) from zero to full operation in just **48 hours**.
 
-### **Networking & Security**
-* **OPNsense:** Acting as the primary perimeter firewall and routing engine.
-* **Cisco & UniFi:** A hybrid switching environment utilizing:
-    * **VLAN Segmentation:** Isolating Management, IoT, and Lab traffic.
-    * **OSPF Testing:** Experimenting with dynamic routing protocols across the lab.
+---
 
-### **Storage**
-* **TrueNAS Scale:** Centralized ZFS storage providing NFS and SMB shares to the entire cluster.
+## 📜 Certifications
+* Validated skills. No paper tigers here.*
+
+| Badge | Certification | Date |
+| :--- | :--- | :--- |
+| **CBROPS** | Cisco Certified Cybersecurity Associate | Jun 2025 |
+| **CCNA** | Cisco Certified Network Associate | Feb 2025 |
+| **ITIL 4** | ITIL Foundation | Jun 2024 |
+| **Linux+** | LPI Linux Essentials | May 2024 |
+| **A+** | CompTIA A+ | Mar 2024 |
+
+---
+
+## 🛠️ The Stack (Lab & Prod)
+**Hardware:** Cisco (Routers/Switches), Ubiquiti Unifi, Custom Proxmox Nodes
+**Software:** OPNsense, Docker, Splunk, Wireshark
+**Automation:** Python, Ansible, Terraform
+
+---
+
+[Check out my full Bio & Projects](./bio.md){ .md-button .md-button--primary }
 
 ---
 
