@@ -1,45 +1,48 @@
-# ⚡ The Person Behind The Subnet
+# About & Accomplishments
 
-I’m a Network Engineering student, a career changer, and a lifelong fan of the punk rock/emo DIY ethic. Based in Utah, I’ve spent the last few years transitioning from the medical industry.
+## The Journey
+I am a Network Support Specialist and mid-career professional who successfully transitioned into IT from a non-technical background. My journey is defined by a relentless drive to learn—illustrated by my rapid acquisition of industry certifications and the complex, enterprise-grade homelab I maintain to sharpen my skills.
 
-
-
----
-
-## 🎸 The Story
-My path into IT wasn't a straight line. I started my professional pivot in my mid-30s, proving that it’s never too late to reinvent yourself in tech. I began with the foundational "grind" of help desk/IT intern, which gave me a deep appreciation for the end-user experience. 
-
-In late 2025, I made the jump into my first network role as a Network Support Specialist. Today, I balance my professional responsibilities with a relentless pursuit of networking knowledge—specifically focusing on OSPF, VLAN segmentation, and automation. After I graduate, I also plan on pursuing the CCNP certification. 
+Currently, I am pursuing a **B.S. in Network Engineering and Security (Cisco Track)** at **Western Governors University**.
 
 ---
 
-## 🎓 Education & Growth
-* **WGU (Western Governors University):** B.S. in Network/Cloud Engineering (In Progress)
-* **Continuous Learning:** Currently diving into **Python** for network programmability and pursuing advanced networking certifications.
-* **The "Mosh" Philosophy:** I believe technical documentation should be clear, accessible, and maybe even a little loud. 
+## Professional Accomplishments
+*From my recent work as an IT Intern & Network Support Specialist:*
+
+* **Critical Infrastructure Rescue:** Diagnosed and resolved a critical IPsec VPN tunnel failure affecting a production licensing server. [cite_start]This intervention restored connectivity, preventing 3+ hours of downtime and saving estimated operational costs of ~$15k[cite: 40].
+* **Network Segmentation:** Configured and implemented five secure VLANs to segment a flat Layer 2 network. [cite_start]This reduced broadcast traffic and security risks for 150+ devices while improving overall network performance by 30%[cite: 41].
+* [cite_start]**Rapid Deployment:** Deployed full IT infrastructure for a newly acquired office—provisioning network connectivity, video conferencing systems, and 25 workstations to achieve full operational readiness within 48 hours[cite: 42].
 
 ---
 
-## 💼 Core Competencies
-| Category | Skills |
-| :--- | :--- |
-| **Networking** | Subnetting, VLAN (802.1Q), OSPF, DHCP, UniFi Infrastructure |
-| **Virtualization** | Proxmox VE, Docker, Portainer |
-| **Automation** | n8n, YAML, Python (Scripting) |
-| **OS/Systems** | Windows 10/11, Ubuntu Server, Rocky Linux, TrueNAS Scale |
+## Certifications
+I actively validate my skills through industry-recognized certifications.
+
+| Certification | Issuing Organization | Date Earned |
+| :--- | :--- | :--- |
+| **Cisco Certified Cybersecurity Associate (CBROPS)** | Cisco | [cite_start]June 2025 [cite: 47] |
+| **Cisco Certified Network Associate (CCNA)** | Cisco | [cite_start]Feb 2025 [cite: 48] |
+| **ITIL Foundation** | AXELOS | [cite_start]June 2024 [cite: 49] |
+| **LPI Linux Essentials** | LPI | [cite_start]May 2024 [cite: 50] |
+| **CompTIA A+** | CompTIA | [cite_start]March 2024 [cite: 51] |
 
 ---
 
-## 📸 Content Creation
-Under the handle **@moshthesubnet**, I create tech and networking content for Instagram and maybe TikTok/Youtube in the future. My goal is to demystify complex networking topics—like IP subnetting—for the next generation of IT professionals and career changers. I believe the IT community is at its best when we share our "labs" and our lessons.
+## Core Competencies
+
+### Networking & Security
+* [cite_start]**Cisco Ecosystem:** IOS, Routing & Switching (OSPF, EIGRP), VLANs, STP[cite: 36, 53].
+* [cite_start]**Security:** Firewall Configuration (Cisco ASA/Unifi), Packet Analysis (Wireshark/tcpdump), SIEM (Splunk/Elastic)[cite: 36].
+* [cite_start]**Infrastructure:** LAN/WAN Configuration, TCP/IP, Subnetting[cite: 36].
+
+### Systems & Automation
+* [cite_start]**Virtualization:** Proxmox (Homelab), VMware, Hyper-V[cite: 36].
+* [cite_start]**Cloud & DevOps:** Azure, AWS, Docker, CI/CD Pipelines[cite: 36].
+* [cite_start]**Scripting:** Python, Infrastructure as Code[cite: 36].
 
 ---
 
-## ✨ Notable Accomplishments
-* **$0 to Network Engineer:** Successfully navigated the transition from IT intern to a network-focused role in under two years.
-* **Lab Optimization:** Designed and maintained a high-efficiency 2-node Docker cluster and a robust UniFi-based home network.
-* **Community Building:** Growing an audience of fellow tech enthusiasts who value authenticity and hard-earned technical skills.
-
----
-
-> "DIY isn't just for music; it's how you build a career in tech."
+## Education
+* **B.S. [cite_start]Network Engineering and Security** – Western Governors University (*Currently Enrolled*) [cite: 44]
+* [cite_start]**B.S.** – Utah State University (2017) [cite: 45]
