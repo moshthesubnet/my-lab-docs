@@ -42,9 +42,14 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 
 ```mermaid
 graph TD
-    Firewall[OPNsense Firewall] --> Switch[USW Pro Max 16 PoE] --> Switch[Cisco Catalyst 2960x]
-    Switch --> Server[Proxmox Node]
-    Switch --> AP[Unifi AP]
+    Firewall[OPNsense Firewall] --> MainSwitch[USW Pro Max 16 PoE]
+    MainSwitch -- 1Gb Uplink --> LabSwitch[Cisco Catalyst 2960X]
+    
+    %% Devices connected to Unifi Switch
+    MainSwitch --> AP[Unifi AP]
+    MainSwitch --> Server[Proxmox Node]
+    %% Devices connected to Cisco Switch
+    LabSwitch --> Server[Raspberry Pi 4]
 ```
 
 ---
