@@ -1,4 +1,4 @@
-# Welcome to Mosh The Subnet 🎸🤘
+# Welcome to Mosh The Subnet :material-guitar-electric:
 
 I'm **Skyler King**—a Network Support Specialist, homelab enthusiast, and emo/punk rock fan.
 
