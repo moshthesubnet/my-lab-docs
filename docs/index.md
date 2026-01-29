@@ -1,4 +1,4 @@
-# Welcome to Mosh The Subnet :material-guitar-electric:
+# :material-guitar-electric: :material-home-lightning-bolt-outline: Welcome to Mosh The Subnet 
 
 I'm **Skyler King**—a Network Support Specialist, homelab enthusiast, and emo/punk rock fan.
 
