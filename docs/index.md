@@ -40,6 +40,13 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 **Software:** OPNsense, Docker, Splunk, Wireshark
 **Automation:** Python, Ansible, Terraform
 
+```mermaid
+graph TD
+    Firewall[OPNsense Firewall] --> Switch[Cisco 3750]
+    Switch --> Server[Proxmox Node]
+    Switch --> AP[Unifi AP]
+```
+
 ---
 
 [Check out my full Bio & Projects](./bio.md){ .md-button .md-button--primary }
