@@ -10,9 +10,9 @@ Currently, I am pursuing a **B.S. in Network Engineering and Security (Cisco Tra
 ## Professional Accomplishments
 *From my recent work as an IT Intern & Network Support Specialist:*
 
-* **Critical Infrastructure Rescue:** Diagnosed and resolved a critical IPsec VPN tunnel failure affecting a production licensing server. [cite_start]This intervention restored connectivity, preventing 3+ hours of downtime and saving estimated operational costs of ~$15k[cite: 40].
-* **Network Segmentation:** Configured and implemented five secure VLANs to segment a flat Layer 2 network. [cite_start]This reduced broadcast traffic and security risks for 150+ devices while improving overall network performance by 30%[cite: 41].
-* [cite_start]**Rapid Deployment:** Deployed full IT infrastructure for a newly acquired office—provisioning network connectivity, video conferencing systems, and 25 workstations to achieve full operational readiness within 48 hours[cite: 42].
+* **Critical Infrastructure Rescue:** Diagnosed and resolved a critical IPsec VPN tunnel failure affecting a production licensing server. This intervention restored connectivity, preventing 3+ hours of downtime and saving estimated operational costs of ~$15k.
+* **Network Segmentation:** Configured and implemented five secure VLANs to segment a flat Layer 2 network. This reduced broadcast traffic and security risks for 150+ devices while improving overall network performance by 30%.
+* **Rapid Deployment:** Deployed full IT infrastructure for a newly acquired office—provisioning network connectivity, video conferencing systems, and 25 workstations to achieve full operational readiness within 48 hours.
 
 ---
 
