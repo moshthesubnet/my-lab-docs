@@ -54,6 +54,7 @@ graph TD
     AP[Unifi AP]
     PC[Workstation]
     RP[Raspberry Pi]
+    N[NAS]
 
     %% Connections
     Firewall --> MainSwitch
@@ -63,6 +64,7 @@ graph TD
     MainSwitch --> AP
     MainSwitch --> PC
     MainSwitch --> Server
+    MainSwitch --> N
     LabSwitch --> RP
 ```
 
