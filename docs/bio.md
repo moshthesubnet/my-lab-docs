@@ -7,7 +7,7 @@ Currently, I am pursuing a **B.S. in Network Engineering and Security (Cisco Tra
 
 ---
 
-## Professional Accomplishments
+## 🏆 Professional Accomplishments
 *From my recent work as an IT Intern & Network Support Specialist:*
 
 * **Critical Infrastructure Rescue:** Diagnosed and resolved a critical IPsec VPN tunnel failure affecting a production licensing server. This intervention restored connectivity, preventing 3+ hours of downtime and saving estimated operational costs of ~$15k.
@@ -16,7 +16,7 @@ Currently, I am pursuing a **B.S. in Network Engineering and Security (Cisco Tra
 
 ---
 
-## Certifications
+## 📜 Certifications
 I actively validate my skills through industry-recognized certifications.
 
 | Certification | Issuing Organization | Date Earned |
@@ -29,7 +29,7 @@ I actively validate my skills through industry-recognized certifications.
 
 ---
 
-## Core Competencies
+## 🤹 Core Competencies
 
 ### Networking & Security
 * **Cisco Ecosystem:** IOS, Routing & Switching (OSPF, EIGRP), VLANs, STP.
