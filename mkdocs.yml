@@ -38,6 +38,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
   
 copyright: |
   &copy; 2026 moshthesubnet. All rights reserved. <br>
