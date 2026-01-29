@@ -36,9 +36,11 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 ---
 
 ## 🛠️ The Stack (Lab & Prod)
-**Hardware:** Cisco (Routers/Switches), Ubiquiti Unifi, Custom Proxmox Nodes
-**Software:** OPNsense, Docker, Splunk, Wireshark
-**Automation:** Python, Ansible, Terraform
+* **Hardware:** Cisco (Routers/Switches), Ubiquiti Unifi, Custom Proxmox Nodes
+* **Software:** OPNsense, Docker, Splunk, Wireshark
+* **Automation:** Python, Ansible, Terraform
+
+<br>
 
 ```mermaid
 graph TD
