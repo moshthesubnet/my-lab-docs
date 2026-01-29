@@ -1,6 +1,4 @@
-# my-lab-docs
-
-## Project Title: Mosh The Subnet Portfolio/Lab Documentation
+# Project Title: Mosh The Subnet Portfolio/Lab Documentation
 
 The "Why":  A central hub for my homelab documentation, networking projects, and professional bio.
 
