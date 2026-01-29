@@ -42,7 +42,7 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 
 ```mermaid
 graph TD
-    Firewall[OPNsense Firewall] --> Switch[Cisco 3750]
+    Firewall[OPNsense Firewall] --> Switch[USW Pro Max 16 PoE] --> Switch[Cisco Catalyst 2960x]
     Switch --> Server[Proxmox Node]
     Switch --> AP[Unifi AP]
 ```
