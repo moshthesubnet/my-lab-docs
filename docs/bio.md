@@ -32,17 +32,17 @@ I actively validate my skills through industry-recognized certifications.
 ## Core Competencies
 
 ### Networking & Security
-* [cite_start]**Cisco Ecosystem:** IOS, Routing & Switching (OSPF, EIGRP), VLANs, STP[cite: 36, 53].
-* [cite_start]**Security:** Firewall Configuration (Cisco ASA/Unifi), Packet Analysis (Wireshark/tcpdump), SIEM (Splunk/Elastic)[cite: 36].
-* [cite_start]**Infrastructure:** LAN/WAN Configuration, TCP/IP, Subnetting[cite: 36].
+* **Cisco Ecosystem:** IOS, Routing & Switching (OSPF, EIGRP), VLANs, STP.
+* **Security:** Firewall Configuration (Cisco ASA/Unifi), Packet Analysis (Wireshark/tcpdump), SIEM (Splunk/Elastic).
+* **Infrastructure:** LAN/WAN Configuration, TCP/IP, Subnetting.
 
 ### Systems & Automation
-* [cite_start]**Virtualization:** Proxmox (Homelab), VMware, Hyper-V[cite: 36].
-* [cite_start]**Cloud & DevOps:** Azure, AWS, Docker, CI/CD Pipelines[cite: 36].
-* [cite_start]**Scripting:** Python, Infrastructure as Code[cite: 36].
+* **Virtualization:** Proxmox (Homelab), VMware, Hyper-V.
+* **Cloud & DevOps:** Azure, AWS, Docker, CI/CD Pipelines.
+* **Scripting:** Python, Infrastructure as Code.
 
 ---
 
 ## Education
-* **B.S. [cite_start]Network Engineering and Security** – Western Governors University (*Currently Enrolled*) [cite: 44]
-* [cite_start]**B.S.** – Utah State University (2017) [cite: 45]
+* **B.S. Network Engineering and Security** – Western Governors University (*Currently Enrolled*)
+* **B.S.** – Utah State University (2017)
