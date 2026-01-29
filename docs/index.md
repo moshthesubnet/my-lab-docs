@@ -30,7 +30,7 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 | **CBROPS** | Cisco Certified Cybersecurity Associate | Jun 2025 |
 | **CCNA** | Cisco Certified Network Associate | Feb 2025 |
 | **ITIL 4** | ITIL Foundation | Jun 2024 |
-| **Linux+** | LPI Linux Essentials | May 2024 |
+| **LPI** | Linux Essentials | May 2024 |
 | **A+** | CompTIA A+ | Mar 2024 |
 
 ---
