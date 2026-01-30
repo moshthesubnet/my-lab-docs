@@ -1,7 +1,7 @@
 # :material-guitar-electric: :material-home-lightning-bolt-outline: Welcome to Mosh The Subnet 
 
 <div align="center">
-  <img src="assets/profilepic.jpg" alt="Skyler King" width="350" style="border-radius: 50%; margin: 30px 0; border: 4px solid #ff6b35; box-shadow: 0 8px 24px rgba(255,107,53,0.3);">
+  <img src="assets/profilepic.jpg" alt="Skyler King" width="350" style="border-radius: 50%; margin: 30px 0; border: 4px solid #9b59b6; box-shadow: 0 8px 24px rgba(155,89,182,0.3);">
 </div>
 
 I'm **Skyler King**—a Network Support Specialist, homelab enthusiast, and emo/punk rock fan.
