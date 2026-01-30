@@ -1,5 +1,9 @@
 # :material-guitar-electric: :material-home-lightning-bolt-outline: Welcome to Mosh The Subnet 
 
+<div align="center">
+  <img src="assets/profilepic.jpg" alt="Skyler King" width="200" style="border-radius: 50%; margin: 20px 0;">
+</div>
+
 I'm **Skyler King**—a Network Support Specialist, homelab enthusiast, and emo/punk rock fan.
 
 I document my journey from "it works on my machine" to enterprise-grade network engineering here. Whether it's breaking OSPF in the lab or fixing critical infrastructure in production, this is where I write it down.
