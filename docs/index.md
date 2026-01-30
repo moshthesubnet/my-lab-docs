@@ -74,12 +74,10 @@ graph TD
 
 ---
 
-[Check out my full Bio & Projects](./bio.md){ .md-button .md-button--primary }
+[Read My Full Story](./bio.md){ .md-button .md-button--primary }
+[Explore The Lab](./lab/overview.md){ .md-button }
 
 ---
-
-## 🚀 Ready to Dive In?
-Start with the [Lab Overview](./lab-overview.md) to see how it's all connected, or jump straight into my latest [troubleshooting guides](./guides).
 
 **Connect:**
 [:fontawesome-brands-instagram: Instagram](https://instagram.com/moshthesubnet) · 
