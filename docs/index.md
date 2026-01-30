@@ -78,8 +78,10 @@ graph TD
 
 ---
 
-## 📬 Connect With Me
+## 🚀 Ready to Dive In?
+Start with the [Lab Overview](./lab-overview.md) to see how it's all connected, or jump straight into my latest [troubleshooting guides](./guides.md).
 
-* **Instagram:** [@moshthesubnet](https://instagram.com/moshthesubnet)
-* **LinkedIn:** [skylerkingnetwork](https://www.linkedin.com/in/skylerkingnetwork)
-* **GitHub:** [moshthesubnet](https://github.com/moshthesubnet)
+**Connect:**
+[:fontawesome-brands-instagram: Instagram](https://instagram.com/moshthesubnet) · 
+[:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/skylerkingnetwork) · 
+[:fontawesome-brands-github: GitHub](https://github.com/moshthesubnet)
