@@ -79,7 +79,7 @@ graph TD
 ---
 
 ## 🚀 Ready to Dive In?
-Start with the [Lab Overview](./lab-overview.md) to see how it's all connected, or jump straight into my latest [troubleshooting guides](./guides.md).
+Start with the [Lab Overview](./lab-overview.md) to see how it's all connected, or jump straight into my latest [troubleshooting guides](./guides).
 
 **Connect:**
 [:fontawesome-brands-instagram: Instagram](https://instagram.com/moshthesubnet) · 
