@@ -116,7 +116,7 @@ The redesigned network architecture addresses security concerns and implements p
 #### Switch Configuration (Trunk Port)
 ```
 interface GigabitEthernet0/1
- description Trunk to Core Router
+ description Trunk Uplink
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport trunk native vlan 999
