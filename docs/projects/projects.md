@@ -32,7 +32,7 @@ Additional projects currently in development or documentation:
 - 🔄 **Homelab Automation with Ansible** - Configuration management and automated deployment
 - 🔄 **Centralized Logging and Monitoring** - ELK Stack implementation for network visibility
 - 🔄 **VPN Infrastructure** - Site-to-site and remote access VPN configuration
-- 🔄 **Containerized Services** - Docker and Kubernetes homelab deployment
+- 🔄 **Containerized Services** - Docker/Podman and Kubernetes homelab deployment
 
 ---
 
