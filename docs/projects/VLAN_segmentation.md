@@ -182,27 +182,33 @@ interface GigabitEthernet0/2
 ### Firewall Rules Summary
 
 **Home VLAN (10) can access:**
+
 - Internet (all protocols)
 - SERVERS VLAN (specific services: DNS, DHCP, HTTP/S, SMB)
 - Denied to: MALWARE, IoT, HOMELAB
 
 **MALWARE VLAN (20) can access:**
+
 - Nothing (completely isolated)
 
 **HOMELAB VLAN (30) can access:**
+
 - Internet (all protocols)
 - SERVERS VLAN (all services for testing)
 - Denied to: MALWARE, Home, IoT
 
 **SERVERS VLAN (40):**
+
 - Outbound: Internet (for updates)
 - Inbound: Controlled access from Home and HOMELAB
 
 **IoT VLAN (50) can access:**
+
 - Internet only (specific ports: 80, 443, 53)
 - Denied to: All other VLANs
 
 **MGMT VLAN (99):**
+
 - Access from specific admin workstation only
 - No access from other VLANs
 
