@@ -30,6 +30,7 @@ The original network configuration had several security concerns:
 | 50 | IoT | 10.30.X.0/24 | Internet of Things devices |
 
 **Key Issues Identified:**
+
 - Using VLAN 1 as the native VLAN (security vulnerability)
 - VLAN 1 carrying user traffic (against best practices)
 - No dedicated management VLAN for network device administration
@@ -50,6 +51,7 @@ The redesigned network architecture addresses security concerns and implements p
 | 99 | MGMT | 10.0.X.0/24 | Network management |
 
 **Improvements Implemented:**
+
 - Native VLAN changed to 999 (no IP addressing for security)
 - Dedicated management VLAN (99) for switch/router administration
 - VLAN 1 completely removed from production use
