@@ -307,12 +307,12 @@ Complete subnet allocation and usage tracking maintained in separate spreadsheet
 
 **Quick Reference:**
 
-- **10.10.0.0/24** - Home
-- **10.0.20.0/24** - MALWARE
-- **10.30.30.0/24** - HOMELAB
-- **10.30.40.0/28** - SERVERS
-- **10.30.50.0/24** - IoT
-- **10.0.99.0/24** - MGMT
+- **10.10.X.0/24** - Home
+- **10.0.X.0/24** - MALWARE
+- **10.30.X.0/24** - HOMELAB
+- **10.30.X.0/28** - SERVERS
+- **10.30.X.0/24** - IoT
+- **10.0.X.0/24** - MGMT
 
 ### Change Management
 
@@ -328,7 +328,7 @@ All network changes follow this process:
 ### Backup Procedures
 
 - Weekly automated configuration backups
-- Stored in SERVERS VLAN (10.30.40.5)
+- Stored in SERVERS VLAN
 - Offsite backup to cloud storage
 - Configuration version control using Git
 
