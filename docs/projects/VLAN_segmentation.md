@@ -323,7 +323,7 @@ All network changes follow this process:
 ### Backup Procedures
 
 - Weekly automated configuration backups
-- Stored in SERVERS VLAN (10.30.40.5)
+- Stored in SERVERS VLAN
 - Offsite backup to cloud storage
 - Configuration version control using Git
 
