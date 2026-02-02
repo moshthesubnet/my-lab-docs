@@ -18,11 +18,11 @@ The original network configuration had several security concerns:
 
 | VLAN ID | Name | Network Subnet | Purpose |
 |---------|------|----------------|---------|
-| 1 | LAN | 10.30.10.0/24 | General LAN traffic (Default VLAN) |
-| 20 | MALWARE | 10.0.20.0/24 | Malware analysis environment |
-| 30 | HOMELAB | 10.30.30.0/24 | Lab testing environment |
-| 40 | SERVERS | 10.30.40.0/28 | Production servers |
-| 50 | IoT | 10.30.50.0/24 | Internet of Things devices |
+| 1 | LAN | 10.30.X.0/24 | General LAN traffic (Default VLAN) |
+| 20 | MALWARE | 10.0.X.0/24 | Malware analysis environment |
+| 30 | HOMELAB | 10.30.X.0/24 | Lab testing environment |
+| 40 | SERVERS | 10.30.X.0/28 | Production servers |
+| 50 | IoT | 10.30.X.0/24 | Internet of Things devices |
 
 **Key Issues Identified:**
 - Using VLAN 1 as the native VLAN (security vulnerability)
@@ -37,12 +37,12 @@ The redesigned network architecture addresses security concerns and implements p
 | VLAN ID | Name | Network Subnet | Purpose |
 |---------|------|----------------|---------|
 | 999 | Native | N/A | Native VLAN (no IP addressing) |
-| 10 | Home | 10.10.0.0/24 | General home network traffic |
-| 20 | MALWARE | 10.0.20.0/24 | Isolated malware analysis |
-| 30 | HOMELAB | 10.30.30.0/24 | Lab and testing environment |
-| 40 | SERVERS | 10.30.40.0/28 | Production server subnet |
-| 50 | IoT | 10.30.50.0/24 | IoT device isolation |
-| 99 | MGMT | 10.0.99.0/24 | Network management |
+| 10 | Home | 10.10.X.0/24 | General home network traffic |
+| 20 | MALWARE | 10.0.X.0/24 | Isolated malware analysis |
+| 30 | HOMELAB | 10.30.X.0/24 | Lab and testing environment |
+| 40 | SERVERS | 10.30.X.0/28 | Production server subnet |
+| 50 | IoT | 10.30.X.0/24 | IoT device isolation |
+| 99 | MGMT | 10.0.X.0/24 | Network management |
 
 **Improvements Implemented:**
 - Native VLAN changed to 999 (no IP addressing for security)
@@ -76,36 +76,36 @@ The redesigned network architecture addresses security concerns and implements p
 - Simplified troubleshooting
 
 **Implementation:**
-- Created VLAN 99 with subnet 10.0.99.0/24
+- Created VLAN 99 with subnet 10.0.X.0/24
 - Assigned all switch and router management interfaces to this VLAN
 - Implemented access control lists (ACLs) restricting management access
 - Enabled SSH only on VLAN 99 interface
 
 #### 3. Network Segmentation Strategy
 
-**VLAN 10 - Home Network (10.10.0.0/24):**
+**VLAN 10 - Home Network (10.10.X.0/24):**
 - General user traffic for trusted home devices
 - Workstations, laptops, phones
 - Access to internet and select server resources
 
-**VLAN 20 - MALWARE Analysis (10.0.20.0/24):**
+**VLAN 20 - MALWARE Analysis (10.0.X.0/24):**
 - Heavily isolated environment for malware analysis
 - No outbound internet access
 - Firewall rules block all inter-VLAN communication
 - Snapshot/rollback capabilities for VMs
 
-**VLAN 30 - HOMELAB (10.30.30.0/24):**
+**VLAN 30 - HOMELAB (10.30.X.0/24):**
 - Testing and development environment
 - Isolated from production servers
 - Can be reset without impacting production
 
-**VLAN 40 - SERVERS (10.30.40.0/28):**
+**VLAN 40 - SERVERS (10.30.X.0/28):**
 - Production server subnet (/28 = 14 usable hosts)
 - Smaller subnet reflects current server needs
 - Controlled access from other VLANs via firewall rules
 - Hosts critical services (DNS, DHCP, file servers, etc.)
 
-**VLAN 50 - IoT (10.30.50.0/24):**
+**VLAN 50 - IoT (10.30.X.0/24):**
 - Isolated smart home and IoT devices
 - No direct access to servers or home network
 - Internet access only (restricted outbound)
@@ -133,22 +133,6 @@ interface GigabitEthernet0/2
  switchport port-security
  switchport port-security maximum 2
  spanning-tree portfast
- no shutdown
-```
-
-#### Router Subinterface Configuration
-```
-interface GigabitEthernet0/0.10
- description Home VLAN
- encapsulation dot1Q 10
- ip address 10.10.0.1 255.255.255.0
- ip helper-address 10.30.40.10
- no shutdown
-
-interface GigabitEthernet0/0.99
- description Management VLAN
- encapsulation dot1Q 99
- ip address 10.0.99.1 255.255.255.0
  no shutdown
 ```
 
@@ -319,12 +303,12 @@ _[Include your network topology diagram here]_
 Complete subnet allocation and usage tracking maintained in separate spreadsheet.
 
 **Quick Reference:**
-- 10.10.0.0/24 - Home
-- 10.0.20.0/24 - MALWARE
-- 10.30.30.0/24 - HOMELAB  
-- 10.30.40.0/28 - SERVERS
-- 10.30.50.0/24 - IoT
-- 10.0.99.0/24 - MGMT
+- 10.10.X.0/24 - Home
+- 10.0.X.0/24 - MALWARE
+- 10.30.X.0/24 - HOMELAB  
+- 10.30.X.0/28 - SERVERS
+- 10.30.X.0/24 - IoT
+- 10.0.X.0/24 - MGMT
 
 ### Change Management
 
