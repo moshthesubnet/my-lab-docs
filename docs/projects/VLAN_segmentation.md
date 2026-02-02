@@ -303,7 +303,7 @@ _[Include your network topology diagram here]_
 
 ### IP Address Management (IPAM)
 
-Complete subnet allocation and usage tracking maintained in separate spreadsheet.
+Complete subnet allocation and usage tracking maintained in NetBox
 
 **Quick Reference:**
 
