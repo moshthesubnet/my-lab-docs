@@ -116,7 +116,7 @@ The redesigned network architecture addresses security concerns and implements p
 #### Switch Configuration (Trunk Port)
 ```
 interface GigabitEthernet0/1
- description Trunk Uplink
+ description Trunk to Core Router
  switchport trunk encapsulation dot1q
  switchport mode trunk
  switchport trunk native vlan 999
@@ -256,7 +256,7 @@ show spanning-tree vlan 10
 show ip interface brief
 
 # Test connectivity
-ping 10.30.40.10 source 10.10.0.100
+ping 10.30.X.10 source 10.10.X.100
 ```
 
 ---
@@ -293,42 +293,43 @@ ping 10.30.40.10 source 10.10.0.100
 
 ---
 
----
-
 ## Documentation and Maintenance
 
 ### Network Diagram
 
-_[Include your network topology diagram here]_
+!!! info "Visual Reference"
+    Refer to the interactive network topology diagram for a visual representation of this architecture. The diagram shows the before and after configurations side-by-side.
 
 ### IP Address Management (IPAM)
 
-Complete subnet allocation and usage tracking maintained in NetBox
+Complete subnet allocation and usage tracking maintained in separate spreadsheet.
 
 **Quick Reference:**
 
-- **10.10.X.0/24** - Home
-- **10.0.X.0/24** - MALWARE
-- **10.30.X.0/24** - HOMELAB
-- **10.30.X.0/28** - SERVERS
-- **10.30.X.0/24** - IoT
-- **10.0.X.0/24** - MGMT
+| VLAN | Name | Subnet |
+|------|------|--------|
+| 10 | Home | 10.10.X.0/24 |
+| 20 | MALWARE | 10.0.X.0/24 |
+| 30 | HOMELAB | 10.30.X.0/24 |
+| 40 | SERVERS | 10.30.X.0/28 |
+| 50 | IoT | 10.30.X.0/24 |
+| 99 | MGMT | 10.0.X.0/24 |
 
 ### Change Management
 
 All network changes follow this process:
 
-1. Document proposed change
-2. Test in HOMELAB VLAN if possible
-3. Schedule maintenance window
-4. Implement during low-usage period
-5. Validate and test
-6. Update documentation
+1. **Document** proposed change
+2. **Test** in HOMELAB VLAN if possible
+3. **Schedule** maintenance window
+4. **Implement** during low-usage period
+5. **Validate** and test
+6. **Update** documentation
 
 ### Backup Procedures
 
 - Weekly automated configuration backups
-- Stored in SERVERS VLAN
+- Stored in SERVERS VLAN (10.30.X.5)
 - Offsite backup to cloud storage
 - Configuration version control using Git
 
@@ -359,6 +360,6 @@ This project demonstrates practical application of networking concepts including
 
 ---
 
-**Project Date:** December 2025  
+**Project Date:** December 2025 
 **Last Updated:** February 2026  
 **Status:** Production Implementation Complete
