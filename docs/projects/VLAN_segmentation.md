@@ -293,9 +293,12 @@ ping 10.30.40.10 source 10.10.0.100
 
 ---
 
+---
+
 ## Documentation and Maintenance
 
 ### Network Diagram
+
 _[Include your network topology diagram here]_
 
 ### IP Address Management (IPAM)
@@ -303,16 +306,18 @@ _[Include your network topology diagram here]_
 Complete subnet allocation and usage tracking maintained in separate spreadsheet.
 
 **Quick Reference:**
-- 10.10.X.0/24 - Home
-- 10.0.X.0/24 - MALWARE
-- 10.30.X.0/24 - HOMELAB  
-- 10.30.X.0/28 - SERVERS
-- 10.30.X.0/24 - IoT
-- 10.0.X.0/24 - MGMT
+
+- **10.10.0.0/24** - Home
+- **10.0.20.0/24** - MALWARE
+- **10.30.30.0/24** - HOMELAB
+- **10.30.40.0/28** - SERVERS
+- **10.30.50.0/24** - IoT
+- **10.0.99.0/24** - MGMT
 
 ### Change Management
 
 All network changes follow this process:
+
 1. Document proposed change
 2. Test in HOMELAB VLAN if possible
 3. Schedule maintenance window
@@ -323,7 +328,7 @@ All network changes follow this process:
 ### Backup Procedures
 
 - Weekly automated configuration backups
-- Stored in SERVERS VLAN
+- Stored in SERVERS VLAN (10.30.40.5)
 - Offsite backup to cloud storage
 - Configuration version control using Git
 
@@ -333,14 +338,15 @@ All network changes follow this process:
 
 This VLAN segmentation project significantly improved the security posture and manageability of my homelab network. By following industry best practices and implementing proper network segmentation, I've created a more secure, scalable, and maintainable network infrastructure.
 
-**Key Achievements:**
-- ✅ Eliminated VLAN 1 security vulnerabilities
-- ✅ Implemented secure native VLAN (999)
-- ✅ Created dedicated management network (VLAN 99)
-- ✅ Maintained strong network segmentation across security zones
-- ✅ Improved network documentation and change management
+### Key Achievements
 
-This project demonstrates practical application of networking concepts including VLANs, inter-VLAN routing, network security, and access control, all fundamental skills for network engineering and cybersecurity.
+- Eliminated VLAN 1 security vulnerabilities
+- Implemented secure native VLAN (999)
+- Created dedicated management network (VLAN 99)
+- Maintained strong network segmentation across security zones
+- Improved network documentation and change management
+
+This project demonstrates practical application of networking concepts including VLANs, inter-VLAN routing, network security, and access control—all fundamental skills for network engineering and cybersecurity.
 
 ---
 
@@ -353,6 +359,6 @@ This project demonstrates practical application of networking concepts including
 
 ---
 
-**Project Date:** December 2025
+**Project Date:** December 2025  
 **Last Updated:** February 2026  
 **Status:** Production Implementation Complete
