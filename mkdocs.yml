@@ -22,6 +22,8 @@ nav:
       - Proxmox: lab/proxmox.md
       - Guides:
           - Pi-hole LXC: guides/pihole-lxc.md
+      - Projects: projects/projects.md
+          - VLAN Segmentation: projects/VLAN_segmentation.md
 
 extra:
   social:
