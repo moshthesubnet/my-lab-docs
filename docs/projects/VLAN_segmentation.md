@@ -356,7 +356,7 @@ This VLAN segmentation project significantly improved the security posture and m
 - ✅ Maintained strong network segmentation across security zones
 - ✅ Improved network documentation and change management
 
-This project demonstrates practical application of networking concepts including VLANs, inter-VLAN routing, network security, and access control—all fundamental skills for network engineering and cybersecurity.
+This project demonstrates practical application of networking concepts including VLANs, inter-VLAN routing, network security, and access control, all fundamental skills for network engineering and cybersecurity.
 
 ---
 
