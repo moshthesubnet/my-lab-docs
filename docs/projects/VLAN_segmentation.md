@@ -58,24 +58,34 @@ The redesigned network architecture addresses security concerns and implements p
 ### Design Decisions
 
 #### 1. Native VLAN Security (VLAN 999)
-**Rationale:** The native VLAN carries untagged traffic on trunk ports. Using VLAN 1 as the native VLAN is a well-known security risk because:
-* ** VLAN 1 cannot be deleted from Cisco switches
-* ** Certain control plane traffic defaults to VLAN 1
-* ** It's the first VLAN attackers target for VLAN hopping attacks
+
+**Rationale:**
+
+The native VLAN carries untagged traffic on trunk ports. Using VLAN 1 as the native VLAN is a well-known security risk because:
+
+- VLAN 1 cannot be deleted from Cisco switches
+- Certain control plane traffic defaults to VLAN 1
+- It's the first VLAN attackers target for VLAN hopping attacks
 
 **Implementation:**
+
 - Changed native VLAN to 999 across all trunk links
 - VLAN 999 has no IP addressing or user traffic
 - Prevents unauthorized access through untagged frames
 
 #### 2. Management VLAN (VLAN 99)
-**Rationale:** Separating management traffic from user data provides:
+
+**Rationale:**
+
+Separating management traffic from user data provides:
+
 - Enhanced security through network isolation
 - Easier access control and monitoring
 - Protection of administrative interfaces
 - Simplified troubleshooting
 
 **Implementation:**
+
 - Created VLAN 99 with subnet 10.0.X.0/24
 - Assigned all switch and router management interfaces to this VLAN
 - Implemented access control lists (ACLs) restricting management access
@@ -84,28 +94,33 @@ The redesigned network architecture addresses security concerns and implements p
 #### 3. Network Segmentation Strategy
 
 **VLAN 10 - Home Network (10.10.X.0/24):**
+
 - General user traffic for trusted home devices
 - Workstations, laptops, phones
 - Access to internet and select server resources
 
 **VLAN 20 - MALWARE Analysis (10.0.X.0/24):**
+
 - Heavily isolated environment for malware analysis
 - No outbound internet access
 - Firewall rules block all inter-VLAN communication
 - Snapshot/rollback capabilities for VMs
 
 **VLAN 30 - HOMELAB (10.30.X.0/24):**
+
 - Testing and development environment
 - Isolated from production servers
 - Can be reset without impacting production
 
 **VLAN 40 - SERVERS (10.30.X.0/28):**
+
 - Production server subnet (/28 = 14 usable hosts)
 - Smaller subnet reflects current server needs
 - Controlled access from other VLANs via firewall rules
 - Hosts critical services (DNS, DHCP, file servers, etc.)
 
 **VLAN 50 - IoT (10.30.X.0/24):**
+
 - Isolated smart home and IoT devices
 - No direct access to servers or home network
 - Internet access only (restricted outbound)
@@ -207,17 +222,18 @@ interface GigabitEthernet0/2
    - **Solution:** Maintained console cable access during changes
    - Configured rollback timer on switches
 
+
 ### Best Practices Applied
 
-- ✅ Never use VLAN 1 for user traffic
-- ✅ Change native VLAN to unused VLAN ID (999)
-- ✅ Create dedicated management VLAN
-- ✅ Explicitly configure trunk allowed VLANs
-- ✅ Document all VLAN assignments and IP schemes
-- ✅ Implement port security on access ports
-- ✅ Use descriptive VLAN names and interface descriptions
-- ✅ Test changes in lab environment first (VLAN 30)
-- ✅ Maintain network diagrams and IP address documentation
+- Never use VLAN 1 for user traffic
+- Change native VLAN to unused VLAN ID (999)
+- Create dedicated management VLAN
+- Explicitly configure trunk allowed VLANs
+- Document all VLAN assignments and IP schemes
+- Implement port security on access ports
+- Use descriptive VLAN names and interface descriptions
+- Test changes in lab environment first (VLAN 30)
+- Maintain network diagrams and IP address documentation
 
 ---
 
@@ -360,6 +376,6 @@ This project demonstrates practical application of networking concepts including
 
 ---
 
-**Project Date:** December 2025 
+**Project Date:** December 2025
 **Last Updated:** February 2026  
 **Status:** Production Implementation Complete
