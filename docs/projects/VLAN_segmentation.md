@@ -10,9 +10,9 @@ Successfully migrated from a basic VLAN configuration using the insecure default
 
 ## Network Topology
 
-<iframe src="network-topology-diagram-sanitized.html" width="100%" height="1400px" frameborder="0"></iframe>
+<iframe src="network-topology-diagram.html" width="100%" height="1400px" frameborder="0"></iframe>
 
-If you can't see the diagram above, [click here to view it](network-topology-diagram-sanitized.html).
+If you can't see the diagram above, [click here to view it](network-topology-diagram.html).
 
 
 ---
