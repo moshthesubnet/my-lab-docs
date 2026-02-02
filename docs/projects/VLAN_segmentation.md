@@ -59,9 +59,9 @@ The redesigned network architecture addresses security concerns and implements p
 
 #### 1. Native VLAN Security (VLAN 999)
 **Rationale:** The native VLAN carries untagged traffic on trunk ports. Using VLAN 1 as the native VLAN is a well-known security risk because:
-- VLAN 1 cannot be deleted from Cisco switches
-- Certain control plane traffic defaults to VLAN 1
-- It's the first VLAN attackers target for VLAN hopping attacks
+* ** VLAN 1 cannot be deleted from Cisco switches
+* ** Certain control plane traffic defaults to VLAN 1
+* ** It's the first VLAN attackers target for VLAN hopping attacks
 
 **Implementation:**
 - Changed native VLAN to 999 across all trunk links
