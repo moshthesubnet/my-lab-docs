@@ -25,6 +25,7 @@ nav:
       - Projects: 
           - Overview: projects/projects.md
           - VLAN Segmentation: projects/VLAN_segmentation.md
+          - Network Topology Diagram: projects/network-topology-diagram.html
 
 extra:
   social:
