@@ -8,6 +8,11 @@ This project documents the redesign and implementation of network segmentation u
 
 Successfully migrated from a basic VLAN configuration using the insecure default VLAN 1 for LAN traffic to a properly segmented network with a secure native VLAN and dedicated management VLAN. This implementation follows industry best practices for network security and segmentation.
 
+## Network Topology
+
+View the [interactive network topology diagram](docs/assets/network-topology-diagram.html) showing the before and after configurations side-by-side.
+
+
 ---
 
 ## Network Architecture Evolution
