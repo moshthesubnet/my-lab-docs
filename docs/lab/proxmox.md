@@ -138,12 +138,14 @@ Proxmox VMs are strategically isolated based on their risk profile:
 *Current allocation across both nodes:*
 
 **Primary Node (i5-13600K):**
+
 * VMs Running: 13
 * LXCs Running: 4
 * Total RAM Allocated: 60GB / 128GB
 
 
 **Secondary Node (N100):**
+
 * VMs Running: 1
 * LXCs Running: 1
 * Total RAM Allocated: 12GB / 16GB
