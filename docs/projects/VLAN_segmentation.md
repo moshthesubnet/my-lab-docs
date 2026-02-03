@@ -307,31 +307,37 @@ ping 10.30.X.10 source 10.10.X.100
 
 ### Planned Improvements
 
-1. **Voice VLAN Implementation:**
-   - Add VLAN 60 for VoIP traffic
-   - Configure QoS for voice priority
-   - Implement LLDP-MED for IP phone discovery
+#### 1. Voice VLAN Implementation
 
-2. **Guest Network:**
-   - Add VLAN 80 for guest WiFi
-   - Completely isolated from all internal networks
-   - Captive portal for authentication
+- Add VLAN 60 for VoIP traffic
+- Configure QoS for voice priority
+- Implement LLDP-MED for IP phone discovery
 
-3. **Monitoring and Logging:**
-   - Implement VLAN-specific traffic monitoring
-   - Configure NetFlow for traffic analysis
-   - Centralized syslog server in SERVERS VLAN
+#### 2. Guest Network
 
-4. **Advanced Security:**
-   - Implement Private VLANs for IoT device isolation
-   - Configure DHCP snooping to prevent rogue DHCP servers
-   - Enable Dynamic ARP Inspection (DAI)
-   - Implement IP Source Guard
+- Add VLAN 80 for guest WiFi
+- Completely isolated from all internal networks
+- Captive portal for authentication
 
-5. **Automation:**
-   - Develop Ansible playbooks for VLAN provisioning
-   - Automated backup of switch configurations
-   - VLAN configuration validation scripts
+#### 3. Monitoring and Logging
+
+- Implement VLAN-specific traffic monitoring
+- Configure NetFlow for traffic analysis
+- Centralized syslog server in SERVERS VLAN
+
+#### 4. Advanced Security
+
+- Implement Private VLANs for IoT device isolation
+- Configure DHCP snooping to prevent rogue DHCP servers
+- Enable Dynamic ARP Inspection (DAI)
+- Implement IP Source Guard
+
+#### 5. Automation
+
+- Develop Ansible playbooks for VLAN provisioning
+- Automated backup of switch configurations
+- VLAN configuration validation scripts
+
 
 ---
 
