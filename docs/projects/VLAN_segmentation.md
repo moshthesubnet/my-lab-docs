@@ -172,31 +172,32 @@ interface GigabitEthernet0/2
 
 ### Implemented Security Measures
 
-1. **VLAN Hopping Prevention:**
-   
-   - Native VLAN changed to unused VLAN 999
-   - All access ports explicitly assigned to VLANs
-   - Disabled DTP (Dynamic Trunking Protocol) on access ports
+#### 1. VLAN Hopping Prevention
 
-2. **Management Access Control:**
-   
-   - Management VLAN (99) isolated from user VLANs
-   - SSH access only (Telnet disabled)
-   - ACLs restricting management access to specific IP addresses
-   - Strong passwords and AAA authentication
+- Native VLAN changed to unused VLAN 999
+- All access ports explicitly assigned to VLANs
+- Disabled DTP (Dynamic Trunking Protocol) on access ports
 
-3. **Inter-VLAN Routing Controls:**
-   
-   - Firewall rules control traffic between VLANs
-   - Default deny policy with explicit allow rules
-   - MALWARE VLAN has no access to other networks
-   - IoT VLAN restricted to internet only
+#### 2. Management Access Control
 
-4. **Port Security:**
-   
-   - MAC address limiting on access ports
-   - Sticky MAC learning where appropriate
-   - Violation actions configured (shutdown)
+- Management VLAN (99) isolated from user VLANs
+- SSH access only (Telnet disabled)
+- ACLs restricting management access to specific IP addresses
+- Strong passwords and AAA authentication
+
+#### 3. Inter-VLAN Routing Controls
+
+- Firewall rules control traffic between VLANs
+- Default deny policy with explicit allow rules
+- MALWARE VLAN has no access to other networks
+- IoT VLAN restricted to internet only
+
+#### 4. Port Security
+
+- MAC address limiting on access ports
+- Sticky MAC learning where appropriate
+- Violation actions configured (shutdown)
+
 
 ### Firewall Rules Summary
 
