@@ -91,9 +91,8 @@ Proxmox VMs are strategically isolated based on their risk profile:
 ## 📦 Backup Strategy
 
 **Proxmox Native Backups:**
-* Weekly automated snapshots using Proxmox Backup Server
-* Stored on NFS share (Synology NAS)
-* 4-week retention policy
+* Daily Automated Snapshots stored on NFS share (Synology NAS)
+* 4 day retention policy
 
 **Critical VMs:**
 * Daily snapshots before major changes
