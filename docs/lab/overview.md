@@ -7,51 +7,93 @@ The primary goal of this lab is to mirror enterprise-grade networking and virtua
 ---
 
 ## 🏗️ High-Level Architecture
+
 My lab is built on three core pillars:
 
-1. **Virtualization:** A Proxmox VE 2 node setup managing compute resources.
-2. **Infrastructure:** A OPNsense and UniFi-powered backbone with dedicated VLAN segmentation.
-3. **Automation:** A "self-healing" mindset using n8n, Python and Bash to handle repetitive tasks.
+1. **Virtualization:** A 2-node Proxmox VE setup managing compute resources for VMs and containers.
+2. **Infrastructure:** An OPNsense and UniFi-powered backbone with secure VLAN segmentation following Cisco best practices.
+3. **Automation:** A "self-healing" mindset using n8n, Python, and Bash to handle repetitive tasks.
 
 ---
 
-## 🔌 Hardware Inventory
+## 📌 Hardware Inventory
+
 | Component | Device | Role |
 | :--- | :--- | :--- |
 | **Gateway** | OPNsense VM | Main Router & Firewall |
-| **Switching** | UniFi Managed Switch | Layer 2/3 Backbone |
+| **Core Switching** | UniFi USW Pro Max 16 PoE | Layer 2/3 Backbone |
+| **Lab Switching** | Cisco Catalyst 2960X | Lab Environment & Testing |
 | **Wireless** | UniFi U7 Pro | High-speed Wi-Fi 7 Connectivity |
-| **Compute** | Proxmox Node(s) | Hosting VMs and Docker Clusters |
-| **Storage** | TrueNAS Scale/Synology | Centralized Data & Backups |
+| **Compute** | 2x Proxmox Nodes | Hosting VMs and Docker Clusters |
+| **Storage** | TrueNAS Scale / Synology | Centralized Data & Backups |
 
 ---
 
-## 📡 Networking Philosophy
+## 🔡 Network Architecture
 
-I treat my home network like a mini-enterprise. This means:
+My network follows enterprise segmentation principles with dedicated VLANs for security and performance optimization.
 
-* **Zero-Trust (Mostly):** I isolate IoT and Lab devices from my "Trusted" personal data to reduce the attack surface.
-* **Static Everything:** Core infrastructure (Servers, Switches, APs) is assigned static IPs outside of the DHCP pool for reliability.
+### VLAN Structure
+
+| VLAN ID | Name | Purpose |
+| :--- | :--- | :--- |
+| 999 | Native | Secure native VLAN (no IP addressing) |
+| 10 | Home | Trusted end-user devices |
+| 20 | Malware | Isolated cybersecurity lab & malware analysis |
+| 30 | Homelab | Testing different OS and configurations |
+| 40 | Servers | Production Ubuntu/Rocky Linux VMs |
+| 50 | IoT | Smart home devices (isolated) |
+| 99 | Management | Network device administration |
+
+[Read the full VLAN Segmentation project documentation →](../projects/VLAN_segmentation.md)
+
+### Networking Philosophy
+
+I treat my home network like a mini-enterprise:
+
+* **Security by Segmentation:** IoT and Lab devices are isolated from trusted personal data to reduce attack surface.
+* **Static Infrastructure:** Core services (Servers, Switches, APs) use static IPs outside DHCP pools for reliability.
+* **Defense in Depth:** Multiple layers of security including VLAN isolation, firewall rules, and access control lists.
 * **Documentation First:** If it isn't documented here, it doesn't exist.
 
 ---
 
 ## 🛠️ Current Tech Stack
 
-These are the tools I am currently "moshing" with:
+*Technologies I'm actively working with:*
 
-* **Languages:** Python (Learning/Scripting), YAML (Automation)
-* **Platforms:** n8n, Docker, Proxmox, Podman
-* **Network Protocols:** OSPF, VLAN (802.1Q), DHCP, DNS
-* **Monitoring:** Uptime Kuma
-  
+**Virtualization & Containers:**
+* Proxmox VE, Docker, LXC, Podman
+
+**Networking:**
+* Cisco IOS, OPNsense, UniFi, VLANs (802.1Q), OSPF, IPsec VPN
+
+**Automation & Scripting:**
+* Python, Ansible, Bash, YAML, n8n
+
+**Monitoring & Security:**
+* Uptime Kuma, Wireshark, Splunk, Pi-hole
+
 ---
 
 ## 📈 Recent Updates
-* **Jan 2026:** Deployed LXC container to run MkDocs to locally test website.
-* **Jan 2026:** Fully adopted the **U7 Pro** Access Point for Wi-Fi 7 testing.
-* **Jan 2026:** Migrated and consolidated Docker infrastructure for better resource management.
 
+* **Feb 2026:** Completed VLAN segmentation security hardening project—eliminated VLAN 1, implemented native VLAN 999, and created dedicated management VLAN 99.
+* **Jan 2026:** Deployed LXC container running MkDocs for local documentation testing and continuous deployment.
+* **Jan 2026:** Fully adopted the U7 Pro Access Point for Wi-Fi 7 performance testing.
+* **Jan 2026:** Migrated and consolidated Docker infrastructure from 3 hosts to 2 for better resource management.
+
+---
+
+## 🔥 Active Projects
+
+Currently working on:
+
+* **Network Automation:** Developing Ansible playbooks for automated Cisco device configuration and compliance checking
+* **Infrastructure as Code:** Implementing Terraform for automated Proxmox VM provisioning
+* **Monitoring Stack:** Deploying centralized logging with ELK stack across all VLANs
+
+[View all projects →](../projects/projects.md)
 
 ---
 
