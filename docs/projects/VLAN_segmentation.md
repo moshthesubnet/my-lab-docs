@@ -238,16 +238,27 @@ interface GigabitEthernet0/2
 
 ### Challenges Encountered
 
-1. **Native VLAN Mismatch Issues:**
-   - Initial misconfiguration caused trunk links to fail
-   - **Solution:** Verified native VLAN configuration on both ends of trunks
-   - Used `show interfaces trunk` to confirm consistency
+#### 1. Native VLAN Mismatch Issues
 
-2. **Management Access Lockout Risk:**
-   - Changing management VLAN could cause lockout
-   - **Solution:** Maintained console cable access during changes
-   - Configured rollback timer on switches
+- Initial misconfiguration caused trunk links to fail
+- **Solution:** Verified native VLAN configuration on both ends of trunks
+- Used `show interfaces trunk` to confirm consistency
 
+#### 2. Voice VLAN Consideration
+
+- Initially forgot to plan for future VoIP deployment
+- **Solution:** Reserved VLAN 60 for future voice traffic
+
+#### 3. Management Access Lockout Risk
+
+- Changing management VLAN could cause lockout
+- **Solution:** Maintained console cable access during changes
+- Configured rollback timer on switches
+
+#### 4. DHCP Relay Configuration
+
+- Devices in VLANs not receiving IP addresses
+- **Solution:** Configured `ip helper-address` on router subinterfaces pointing to DHCP server
 
 ### Best Practices Applied
 
