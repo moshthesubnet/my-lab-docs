@@ -12,9 +12,9 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 
 ## ⚡ Current Status
 
-**Role:** Network Support Specialist  
+**Role:** Pursuing Entry-Level Networking Roles  
 **Focus:** Cisco Enterprise Networking, Automation, & Network Security  
-**School:** WGU (B.S. Network Engineering & Security - Cisco Track)
+**School:** WGU (B.S. Cisco, Cloud & Network Engineering)
 
 ---
 
