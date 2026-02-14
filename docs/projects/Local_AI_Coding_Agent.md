@@ -149,8 +149,8 @@ sudo systemctl restart ollama
 ### 3. Aider Execution (Developer Workstation)
 
 ```bash
-# Set the API base to the Ubuntu VM (assuming IP is 10.30.X.50)
-export OLLAMA_API_BASE=http://10.30.X.50:11434
+# Set the API base to the Ubuntu VM (assuming IP is 10.30.X.30)
+export OLLAMA_API_BASE=http://10.30.X.30:11434
 
 # Launch Aider specifying the local model via LiteLLM routing
 aider --model ollama_chat/deepseek-coder-v2
@@ -178,7 +178,7 @@ Ollama API (port 11434) is exposed, but restricted via the OPNsense firewall. On
 |------|-------|----------------|---------------|
 | Simple Python Script | Qwen2.5-Coder:7b | Generates script, Aider applies diff | ✅ Pass |
 | Complex Refactoring | DeepSeek-Coder-v2 | Understands multi-file context | ✅ Pass |
-| VM API Reachability | N/A | Workstation can curl http://10.30.X.50:11434 | ✅ Pass |
+| VM API Reachability | N/A | Workstation can curl http://10.30.X.30:11434 | ✅ Pass |
 | Outbound Network Drop | Llama-3-Instruct | Generates code with WAN disconnected | ✅ Pass |
 
 ### Verification Commands
@@ -191,7 +191,7 @@ systemctl status ollama
 ollama list
 
 # Test API connectivity from the workstation
-curl http://10.30.X.50:11434/api/tags
+curl http://10.30.X.30:11434/api/tags
 ```
 
 ---
@@ -208,7 +208,7 @@ curl http://10.30.X.50:11434/api/tags
 
 **VLAN Assignment:** 30 (HOMELAB)  
 **IP Address:** 10.30.X.30  
-**VM Specs:** 8 vCPU, 32GB RAM, 100GB NVMe Storage
+**VM Specs:** 10 vCPU, 32GB RAM, 200GB NVMe Storage, GPU-PCIE passthrough-NVIDIA GTX 1070TI
 
 ### Change Management
 
