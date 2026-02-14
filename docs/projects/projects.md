@@ -6,6 +6,25 @@ Welcome to my homelab and networking projects portfolio. Here you'll find docume
 
 ## Network Infrastructure Projects
 
+### [Privacy-First Local AI Coding Assistant](./local-ai-agent-project.md)
+
+**Status:** ✅ Complete | **Date:** February 2026
+
+Deployed a fully localized, privacy-first AI coding assistant for secure, terminal-based pair programming. This setup utilizes an open-weight model hosted on a Proxmox VM to assist with developing Python automation scripts for network engineering labs without exposing code to third-party APIs.
+
+**Key Highlights:**
+- Deployed Ollama on an Ubuntu Server virtual machine
+- Hosted the Qwen2.5-Coder:14B model locally
+- Integrated Aider on the local workstation for seamless terminal access
+- Focused on security by utilizing a scoped coding tool rather than OS-level agents (e.g., OpenClaw)
+- Automated Python scripting workflows for CCNA lab scenarios
+
+**Technologies:** Proxmox, Ubuntu Server, Ollama, Qwen2.5-Coder, Aider, Python, Generative AI
+
+[Read Full Documentation →](./Local_AI_Coding_Agent.md)
+
+---
+
 ### [VLAN Segmentation and Security Hardening](./vlan-segmentation-project.md)
 
 **Status:** ✅ Complete | **Date:** January 2026
