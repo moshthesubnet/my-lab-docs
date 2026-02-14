@@ -207,7 +207,7 @@ curl http://10.30.X.50:11434/api/tags
 ## Documentation and Maintenance
 
 **VLAN Assignment:** 30 (HOMELAB)  
-**IP Address:** 10.30.X.50  
+**IP Address:** 10.30.X.30  
 **VM Specs:** 8 vCPU, 32GB RAM, 100GB NVMe Storage
 
 ### Change Management
