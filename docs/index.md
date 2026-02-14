@@ -150,7 +150,22 @@ graph TB
 
 ---
 
-## 🔥 Featured Project
+## 🔥 Featured Projects
+
+### Local AI Coding Agent (Ollama + Aider)
+
+Deployed a fully localized, privacy-first AI coding assistant using Ollama and Aider to eliminate external API dependencies and subscription costs.
+
+**Key Achievements:**
+
+- Achieved 100% code privacy with an air-gapped, zero-cost LLM inference engine
+- Provisioned a dedicated Ubuntu VM for resource-isolated AI workloads
+- Integrated Aider CLI for seamless, terminal-based AI pair programming and automated Git commits
+- Established secure API access controls across isolated network VLANs
+
+[View Full Documentation →](projects/Local_AI_Coding_Agent.md){ .md-button .md-button--primary }
+
+---
 
 ### VLAN Segmentation & Security Hardening
 
