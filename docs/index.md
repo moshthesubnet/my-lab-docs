@@ -70,10 +70,10 @@ graph TB
     %% VLANs
     subgraph VLANs["Network Segmentation"]
         VLAN10["VLAN 10 - Home"]
-        VLAN20["VLAN 20 - Homelab"]
-        VLAN30["VLAN 30 - Servers"]
-        VLAN40["VLAN 40 - IoT"]
-        VLAN50["VLAN 50 - Malware Analysis"]
+        VLAN20["VLAN 20 - Malware"]
+        VLAN30["VLAN 30 - Lab"]
+        VLAN40["VLAN 40 - Servers"]
+        VLAN50["VLAN 50 - IoT"]
         VLAN99["VLAN 99 - Management"]
         VLAN999["VLAN 999 - Native"]
     end
