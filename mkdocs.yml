@@ -59,6 +59,17 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search  # (Keep this if you already have it, it's the default MkDocs search)
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      zoomFactor: 2  # Allows users to double-click to zoom in closer
   
 copyright: |
   &copy; 2026 moshthesubnet. All rights reserved. <br>
