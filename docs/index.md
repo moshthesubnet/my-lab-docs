@@ -134,7 +134,7 @@ graph TB
 
     %% Apply Classes to Nodes
     class Internet internet
-    class OPNsense firewall
+    class OPNsense,Pihole1 firewall
     class MainSwitch,LabSwitch switch
     class VLAN10,VLAN20,VLAN30,VLAN40,VLAN50,VLAN99,VLAN999 vlanbox
     class AP,PC,NAS,RP device
