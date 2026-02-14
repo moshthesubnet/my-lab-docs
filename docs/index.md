@@ -53,7 +53,7 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 <div class="mermaid-container" markdown="block">
   
 ```mermaid
-%%{init: {'themeVariables': { 'fontSize': '18px'}}}%%
+%%{init: {'themeVariables': { 'fontSize': '24px'}}}%%
 graph TB
     %% Internet and Edge
     Internet([Internet])
