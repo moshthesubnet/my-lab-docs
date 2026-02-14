@@ -49,8 +49,6 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 * **Software:** OPNsense, Docker, Splunk, Wireshark
 * **Automation:** Python, Ansible, Terraform
 
-<br>
-
 ```mermaid
 graph TB
     %% Internet and Edge
