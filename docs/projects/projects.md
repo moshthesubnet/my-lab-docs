@@ -6,13 +6,14 @@ Welcome to my homelab and networking projects portfolio. Here you'll find docume
 
 ## Network Infrastructure Projects
 
-### [Privacy-First Local AI Coding Assistant](./local-ai-agent-project.md)
+### [Privacy-First Local AI Coding Assistant](./Local_AI_Coding_Agent.md)
 
 **Status:** ✅ Complete | **Date:** February 2026
 
 Deployed a fully localized, privacy-first AI coding assistant for secure, terminal-based pair programming. This setup utilizes an open-weight model hosted on a Proxmox VM to assist with developing Python automation scripts for network engineering labs without exposing code to third-party APIs.
 
 **Key Highlights:**
+
 - Deployed Ollama on an Ubuntu Server virtual machine
 - Hosted the Qwen2.5-Coder:14B model locally
 - Integrated Aider on the local workstation for seamless terminal access
@@ -25,13 +26,14 @@ Deployed a fully localized, privacy-first AI coding assistant for secure, termin
 
 ---
 
-### [VLAN Segmentation and Security Hardening](./vlan-segmentation-project.md)
+### [VLAN Segmentation and Security Hardening](./VLAN_segmentation.md)
 
 **Status:** ✅ Complete | **Date:** January 2026
 
 Comprehensive network redesign implementing proper VLAN segmentation, security hardening, and management network isolation. Migrated from insecure default VLAN 1 configuration to industry best-practice architecture with dedicated management VLAN and secure native VLAN.
 
 **Key Highlights:**
+
 - Eliminated VLAN 1 security vulnerabilities
 - Implemented secure native VLAN (999)
 - Created dedicated management network (VLAN 99)
@@ -40,7 +42,7 @@ Comprehensive network redesign implementing proper VLAN segmentation, security h
 
 **Technologies:** VLANs, 802.1Q, Inter-VLAN Routing, Access Control Lists, Network Segmentation
 
-[Read Full Documentation →](./vlan-segmentation-project.md)
+[Read Full Documentation →](./VLAN_segmentation.md)
 
 ---
 
