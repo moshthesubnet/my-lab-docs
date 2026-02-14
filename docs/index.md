@@ -118,54 +118,31 @@ graph TB
     MainSwitch --> NAS
     MainSwitch --> ProxmoxNode2
     LabSwitch --> RP
-    
-    %% Styling - Internet and Edge
-    style Internet fill:#4a90e2,stroke:#2e5f8a,color:#fff
-    
-    %% Styling - Proxmox Nodes
-    style ProxmoxNode1 fill:#f5f5f5,stroke:#999,color:#333
-    style OPNsense fill:#ff6b6b,stroke:#cc5555,color:#fff
-    
-    style ProxmoxNode2 fill:#f5f5f5,stroke:#999,color:#333
-    
-    %% Styling - VLANs
-    style VLANs fill:#fff9e6,stroke:#e6d699,color:#333
-    style VLAN10 fill:#e3f2fd,stroke:#90caf9,color:#333
-    style VLAN20 fill:#e3f2fd,stroke:#90caf9,color:#333
-    style VLAN30 fill:#e3f2fd,stroke:#90caf9,color:#333
-    style VLAN40 fill:#e3f2fd,stroke:#90caf9,color:#333
-    style VLAN50 fill:#e3f2fd,stroke:#90caf9,color:#333
-    style VLAN99 fill:#e3f2fd,stroke:#90caf9,color:#333
-    style VLAN999 fill:#e3f2fd,stroke:#90caf9,color:#333
-    
-    %% Styling - Switches
-    style MainSwitch fill:#80deea,stroke:#4dd0e1,color:#333
-    style LabSwitch fill:#80deea,stroke:#4dd0e1,color:#333
-    
-    %% Styling - Physical Devices
-    style AP fill:#37474f,stroke:#263238,color:#fff
-    style PC fill:#37474f,stroke:#263238,color:#fff
-    style NAS fill:#37474f,stroke:#263238,color:#fff
-    style RP fill:#37474f,stroke:#263238,color:#fff
-    
-    %% Styling - VMs and LXCs
-    style Pihole2 fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style TwinGate fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style BookstackVM fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style MkDocsVM fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style TrueNAS fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Dockerhost1 fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Dockerhost2 fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Dockerhost3 fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Win11 fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style HomeAssistant fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Netbox fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style CML fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Ollama fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Kali fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Parrot fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style SecurityOnion fill:#e8eaf6,stroke:#9fa8da,color:#333
-    style Podmanhost1 fill:#e8eaf6,stroke:#9fa8da,color:#333
+
+    %% ==========================================
+    %% DARK THEME STYLING
+    %% ==========================================
+
+    %% Class Definitions
+    classDef internet fill:#1a365d,stroke:#63b3ed,stroke-width:2px,color:#ffffff
+    classDef firewall fill:#742a2a,stroke:#fc8181,stroke-width:2px,color:#ffffff
+    classDef switch fill:#276749,stroke:#68d391,stroke-width:2px,color:#ffffff
+    classDef vlanbox fill:#234e52,stroke:#4fd1c5,stroke-width:1px,color:#e6fffa
+    classDef device fill:#5f370e,stroke:#f6ad55,stroke-width:2px,color:#ffffff
+    classDef virtual fill:#44337a,stroke:#b794f4,stroke-width:1px,color:#faf5ff
+
+    %% Apply Classes to Nodes
+    class Internet internet
+    class OPNsense firewall
+    class MainSwitch,LabSwitch switch
+    class VLAN10,VLAN20,VLAN30,VLAN40,VLAN50,VLAN99,VLAN999 vlanbox
+    class AP,PC,NAS,RP device
+    class Pihole2,TwinGate,BookstackVM,MkDocsVM,TrueNAS,Dockerhost1,Dockerhost2,Dockerhost3,Win11,HomeAssistant,Netbox,CML,Ollama,Kali,Parrot,SecurityOnion,Podmanhost1 virtual
+
+    %% Subgraph (Container) Styling
+    style ProxmoxNode1 fill:#1e1e1e,stroke:#555555,color:#eeeeee,stroke-dasharray: 5 5
+    style ProxmoxNode2 fill:#1e1e1e,stroke:#555555,color:#eeeeee,stroke-dasharray: 5 5
+    style VLANs fill:#121212,stroke:#4fd1c5,color:#eeeeee,stroke-dasharray: 5 5
 ```
 
 </div>
