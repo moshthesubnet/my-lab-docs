@@ -31,7 +31,7 @@ graph LR
     
     %% Homelab
     subgraph LabEnv["VLAN 30 - Homelab"]
-        subgraph UbuntuVM["Ubuntu Server VM (10.30.X.50)"]
+        subgraph UbuntuVM["Ubuntu Server VM (10.30.X.30)"]
             Ollama["Ollama API<br/>(Port 11434)"]
             Models[("Local LLMs<br/>(DeepSeek, Qwen)")]
         end
