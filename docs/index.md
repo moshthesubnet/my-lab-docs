@@ -52,57 +52,80 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 <br>
 
 ```mermaid
-graph TD
-    %% Physical Infrastructure
+graph TB
+    %% Internet and Edge
+    Internet([Internet])
+    
+    %% Proxmox Host containing OPNsense
+    subgraph ProxmoxNode1["Proxmox Node 1"]
+        OPNsense[OPNsense VM<br/>Firewall/Router]
+    end
+    
+    %% Main Switch
     MainSwitch[USW Pro Max 16 PoE]
+    
+    %% VLANs
+    subgraph VLANs["Network Segmentation"]
+        VLAN10[VLAN 10 - Home]
+        VLAN20[VLAN 20 - Homelab]
+        VLAN30[VLAN 30 - Servers]
+        VLAN40[VLAN 40 - IoT]
+        VLAN50[VLAN 50 - Malware Analysis]
+        VLAN99[VLAN 99 - Management]
+        VLAN999[VLAN 999 - Native]
+    end
+    
+    %% Trunk Connection
     LabSwitch[Cisco Catalyst 2960X]
     
     %% Physical Devices
     AP[Unifi AP]
     PC[Workstation]
-    RP[Raspberry Pi]
     NAS[NAS]
+    RP[Raspberry Pi]
     
-    %% Proxmox Hosts with nested VMs/Containers
-    subgraph ProxmoxNode1["Proxmox Node 1"]
-        OPNsense[OPNsense VM - Firewall]
-        Pihole1[DNS 1]
-    end
-    
+    %% Proxmox Node 2 with VMs/LXCs
     subgraph ProxmoxNode2["Proxmox Node 2"]
-        Pihole2[DNS 2]
-        TwinGate[Tunnel]
-        BookstackVM[Documentation - LXC]
-        MkDocs[LXC]
-        TrueNAS[VM]
-        Dockerhost1[VM]
-        Dockerhost2[VM]
-        Dockerhost3[VM]
-        Win11[VM]
-        HomeAssistant[VM]
-        Netbox[VM]
-        CML[VM]
-        Ollama[VM]
-        Kali[VM]
-        Parrot[VM]
-        SecurityOnion[VM]
-        Podmanhost1[VM]
+        Pihole2[DNS 2 - LXC]
+        TwinGate[Twingate - LXC]
+        BookstackVM[Bookstack - LXC]
+        MkDocs[MkDocs - LXC]
+        TrueNAS[TrueNAS - VM]
+        Dockerhost1[Docker Host 1 - VM]
+        Dockerhost2[Docker Host 2 - VM]
+        Dockerhost3[Docker Host 3 - VM]
+        Win11[Windows 11 - VM]
+        HomeAssistant[Home Assistant - VM]
+        Netbox[Netbox - VM]
+        CML[Cisco CML - VM]
+        Ollama[Ollama - VM]
+        Kali[Kali Linux - VM]
+        Parrot[Parrot OS - VM]
+        SecurityOnion[Security Onion - VM]
+        Podmanhost1[Podman Host - VM]
     end
     
-    %% Connections
+    %% Connections Flow
+    Internet --> OPNsense
     OPNsense --> MainSwitch
-    MainSwitch -- Trunk --> LabSwitch
+    MainSwitch -.->|Carries All VLANs| VLANs
+    MainSwitch -->|Trunk Port| LabSwitch
     
+    %% Device Connections
     MainSwitch --> AP
     MainSwitch --> PC
     MainSwitch --> NAS
-    MainSwitch -.-> ProxmoxNode1
-    MainSwitch -.-> ProxmoxNode2
+    MainSwitch --> ProxmoxNode2
     LabSwitch --> RP
     
+    %% Styling
+    style Internet fill:#4a90e2
     style OPNsense fill:#ff6b6b
     style ProxmoxNode1 fill:#e8f4f8
     style ProxmoxNode2 fill:#e8f4f8
+    style VLANs fill:#fff4e6
+    style MainSwitch fill:#95e1d3
+    style LabSwitch fill:#95e1d3
 ```
 ---
 
