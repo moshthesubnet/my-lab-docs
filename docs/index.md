@@ -53,7 +53,6 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 <div class="mermaid-container" markdown="block">
   
 ```mermaid
-%%{init: {'themeVariables': { 'fontSize': '24px'}}}%%
 graph TB
     %% Internet and Edge
     Internet([Internet])
@@ -124,6 +123,9 @@ graph TB
     %% ==========================================
     %% DARK THEME STYLING
     %% ==========================================
+
+    %% This forces ALL nodes to scale up their text and padding
+    classDef default font-size:16px,padding:15px;
 
     %% Class Definitions
     classDef internet fill:#1a365d,stroke:#63b3ed,stroke-width:2px,color:#ffffff
