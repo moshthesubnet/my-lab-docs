@@ -78,9 +78,9 @@ I treat my home network like a mini-enterprise:
 
 ## 📈 Recent Updates
 
+* **Feb 2026:** Deployed Ollama on Ubuntu VM and integrated multiple local LLMs with Aider to create a self-hosted AI coding agent environment.
 * **Feb 2026:** Completed VLAN segmentation security hardening project—eliminated VLAN 1, implemented native VLAN 999, and created dedicated management VLAN 99.
 * **Jan 2026:** Deployed LXC container running MkDocs for local documentation testing and continuous deployment.
-* **Jan 2026:** Fully adopted the U7 Pro Access Point for Wi-Fi 7 performance testing.
 * **Jan 2026:** Migrated and consolidated Docker infrastructure from 3 hosts to 2 for better resource management.
 
 ---
