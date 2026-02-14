@@ -64,15 +64,15 @@ graph TD
     NAS[NAS]
     
     %% Proxmox Hosts with nested VMs/Containers
-    subgraph ProxmoxNode1[Proxmox Node 1]
-        OPNsense[OPNsense VM<br/>Firewall]
+    subgraph ProxmoxNode1["Proxmox Node 1"]
+        OPNsense[OPNsense VM - Firewall]
         Pihole1[DNS 1]
     end
     
-    subgraph ProxmoxNode2[Proxmox Node 2]
+    subgraph ProxmoxNode2["Proxmox Node 2"]
         Pihole2[DNS 2]
         TwinGate[Tunnel]
-        Bookstack[Documentation]
+        BookstackVM[Documentation - LXC]
         MkDocs[LXC]
         TrueNAS[VM]
         Dockerhost1[VM]
