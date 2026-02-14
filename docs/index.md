@@ -53,30 +53,57 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 
 ```mermaid
 graph TD
-    %% Define Nodes
-    Firewall[OPNsense Firewall]
+    %% Physical Infrastructure
     MainSwitch[USW Pro Max 16 PoE]
     LabSwitch[Cisco Catalyst 2960X]
     
-    %% Endpoints
-    Server[Proxmox Node]
+    %% Physical Devices
     AP[Unifi AP]
     PC[Workstation]
     RP[Raspberry Pi]
-    N[NAS]
-
-    %% Connections
-    Firewall --> MainSwitch
-    MainSwitch -- Trunk/Uplink --> LabSwitch
+    NAS[NAS]
     
-    %% Device Connections
+    %% Proxmox Hosts with nested VMs/Containers
+    subgraph ProxmoxNode1[Proxmox Node 1]
+        OPNsense[OPNsense VM<br/>Firewall]
+        Pihole[DNS 1]
+    end
+    
+    subgraph ProxmoxNode2[Proxmox Node 2]
+        Pihole[DNS 2]
+        TwinGate[Tunnel
+        Bookstack[Documentation]
+        MkDocs[LXC]
+        TrueNAS[VM]
+        Dockerhost1[VM]
+        Dockerhost2[VM]
+        Dockerhost3[VM]
+        Win11[VM]
+        HomeAssistant[VM]
+        Netbox[VM]
+        CML[VM]
+        Ollama[VM]
+        Kali[VM]
+        Parrot[VM]
+        SecurityOnion[VM]
+        Podmanhost1[VM]
+    end
+    
+    %% Connections
+    OPNsense --> MainSwitch
+    MainSwitch -- Trunk --> LabSwitch
+    
     MainSwitch --> AP
     MainSwitch --> PC
-    MainSwitch --> Server
-    MainSwitch --> N
+    MainSwitch --> NAS
+    MainSwitch -.-> ProxmoxNode1
+    MainSwitch -.-> ProxmoxNode2
     LabSwitch --> RP
+    
+    style OPNsense fill:#ff6b6b
+    style ProxmoxNode1 fill:#e8f4f8
+    style ProxmoxNode2 fill:#e8f4f8
 ```
-
 ---
 
 ## 🔥 Featured Project
