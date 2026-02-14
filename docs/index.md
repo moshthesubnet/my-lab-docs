@@ -49,6 +49,7 @@ I document my journey from "it works on my machine" to enterprise-grade network 
 * **Software:** OPNsense, Docker, Splunk, Wireshark
 * **Automation:** Python, Ansible, Terraform
 
+<div class="mermaid-container" markdown="block">
 ```mermaid
 graph TB
     %% Internet and Edge
@@ -56,7 +57,7 @@ graph TB
     
     %% Proxmox Host containing OPNsense
     subgraph ProxmoxNode1["Proxmox Node 1"]
-        OPNsense[OPNsense VM<br/>Firewall/Router]
+        OPNsense[OPNsense VM - Firewall/Router]
     end
     
     %% Main Switch
@@ -124,7 +125,9 @@ graph TB
     style VLANs fill:#fff4e6
     style MainSwitch fill:#95e1d3
     style LabSwitch fill:#95e1d3
-```
+``` 
+
+</div>
 ---
 
 ## 🔥 Featured Project
