@@ -22,7 +22,7 @@ Currently, I am pursuing a **B.S. in Network Engineering and Security (Cisco Tra
 
 ### Homelab Projects
 
-* **VLAN Security Hardening:** Redesigned my homelab network architecture from an insecure default configuration to a properly segmented, security-hardened topology following Cisco best practices. Eliminated VLAN 1 vulnerabilities, implemented secure native VLAN (999), and created dedicated management VLAN (99). Deployed 7-VLAN architecture with firewall rules isolating home, malware analysis, homelab, servers, IoT, and management traffic. [View full documentation →](/projects/VLAN_segmentation.md)
+* **VLAN Security Hardening:** Redesigned my homelab network architecture from an insecure default configuration to a properly segmented, security-hardened topology following Cisco best practices. Eliminated VLAN 1 vulnerabilities, implemented secure native VLAN (999), and created dedicated management VLAN (99). Deployed 7-VLAN architecture with firewall rules isolating home, malware analysis, homelab, servers, IoT, and management traffic. [View full documentation →](projects/VLAN_segmentation.md)
 
 * **Proxmox Virtualization Cluster:** Built and maintain a multi-node Proxmox cluster running 15+ VMs and LXC containers including Pi-hole DNS, Docker hosts, and security lab environments.
 
