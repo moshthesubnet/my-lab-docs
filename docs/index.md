@@ -59,51 +59,51 @@ graph TB
     
     %% Proxmox Host containing OPNsense
     subgraph ProxmoxNode1["Proxmox Node 1"]
-        OPNsense[OPNsense VM - Firewall/Router]
+        OPNsense["OPNsense VM<br/>Firewall/Router"]
     end
     
     %% Main Switch
-    MainSwitch[USW Pro Max 16 PoE]
+    MainSwitch["USW Pro Max 16 PoE"]
     
     %% VLANs
     subgraph VLANs["Network Segmentation"]
-        VLAN10[VLAN 10 - Home]
-        VLAN20[VLAN 20 - Homelab]
-        VLAN30[VLAN 30 - Servers]
-        VLAN40[VLAN 40 - IoT]
-        VLAN50[VLAN 50 - Malware Analysis]
-        VLAN99[VLAN 99 - Management]
-        VLAN999[VLAN 999 - Native]
+        VLAN10["VLAN 10 - Home"]
+        VLAN20["VLAN 20 - Homelab"]
+        VLAN30["VLAN 30 - Servers"]
+        VLAN40["VLAN 40 - IoT"]
+        VLAN50["VLAN 50 - Malware Analysis"]
+        VLAN99["VLAN 99 - Management"]
+        VLAN999["VLAN 999 - Native"]
     end
     
     %% Trunk Connection
-    LabSwitch[Cisco Catalyst 2960X]
+    LabSwitch["Cisco Catalyst 2960X"]
     
     %% Physical Devices
-    AP[Unifi AP]
-    PC[Workstation]
-    NAS[NAS]
-    RP[Raspberry Pi]
+    AP["Unifi AP"]
+    PC["Workstation"]
+    NAS["NAS"]
+    RP["Raspberry Pi"]
     
     %% Proxmox Node 2 with VMs/LXCs
     subgraph ProxmoxNode2["Proxmox Node 2"]
-        Pihole2[DNS 2 - LXC]
-        TwinGate[Twingate - LXC]
-        BookstackVM[Bookstack - LXC]
-        MkDocs[MkDocs - LXC]
-        TrueNAS[TrueNAS - VM]
-        Dockerhost1[Docker Host 1 - VM]
-        Dockerhost2[Docker Host 2 - VM]
-        Dockerhost3[Docker Host 3 - VM]
-        Win11[Windows 11 - VM]
-        HomeAssistant[Home Assistant - VM]
-        Netbox[Netbox - VM]
-        CML[Cisco CML - VM]
-        Ollama[Ollama - VM]
-        Kali[Kali Linux - VM]
-        Parrot[Parrot OS - VM]
-        SecurityOnion[Security Onion - VM]
-        Podmanhost1[Podman Host - VM]
+        Pihole2["DNS 2 - LXC"]
+        TwinGate["Twingate - LXC"]
+        BookstackVM["Bookstack - LXC"]
+        MkDocsVM["MkDocs - LXC"]
+        TrueNAS["TrueNAS - VM"]
+        Dockerhost1["Docker Host 1 - VM"]
+        Dockerhost2["Docker Host 2 - VM"]
+        Dockerhost3["Docker Host 3 - VM"]
+        Win11["Windows 11 - VM"]
+        HomeAssistant["Home Assistant - VM"]
+        Netbox["Netbox - VM"]
+        CML["Cisco CML - VM"]
+        Ollama["Ollama - VM"]
+        Kali["Kali Linux - VM"]
+        Parrot["Parrot OS - VM"]
+        SecurityOnion["Security Onion - VM"]
+        Podmanhost1["Podman Host - VM"]
     end
     
     %% Connections Flow
@@ -119,14 +119,53 @@ graph TB
     MainSwitch --> ProxmoxNode2
     LabSwitch --> RP
     
-    %% Styling
-    style Internet fill:#4a90e2
-    style OPNsense fill:#ff6b6b
-    style ProxmoxNode1 fill:#e8f4f8
-    style ProxmoxNode2 fill:#e8f4f8
-    style VLANs fill:#fff4e6
-    style MainSwitch fill:#95e1d3
-    style LabSwitch fill:#95e1d3
+    %% Styling - Internet and Edge
+    style Internet fill:#4a90e2,stroke:#2e5f8a,color:#fff
+    
+    %% Styling - Proxmox Nodes
+    style ProxmoxNode1 fill:#f5f5f5,stroke:#999,color:#333
+    style OPNsense fill:#ff6b6b,stroke:#cc5555,color:#fff
+    
+    style ProxmoxNode2 fill:#f5f5f5,stroke:#999,color:#333
+    
+    %% Styling - VLANs
+    style VLANs fill:#fff9e6,stroke:#e6d699,color:#333
+    style VLAN10 fill:#e3f2fd,stroke:#90caf9,color:#333
+    style VLAN20 fill:#e3f2fd,stroke:#90caf9,color:#333
+    style VLAN30 fill:#e3f2fd,stroke:#90caf9,color:#333
+    style VLAN40 fill:#e3f2fd,stroke:#90caf9,color:#333
+    style VLAN50 fill:#e3f2fd,stroke:#90caf9,color:#333
+    style VLAN99 fill:#e3f2fd,stroke:#90caf9,color:#333
+    style VLAN999 fill:#e3f2fd,stroke:#90caf9,color:#333
+    
+    %% Styling - Switches
+    style MainSwitch fill:#80deea,stroke:#4dd0e1,color:#333
+    style LabSwitch fill:#80deea,stroke:#4dd0e1,color:#333
+    
+    %% Styling - Physical Devices
+    style AP fill:#37474f,stroke:#263238,color:#fff
+    style PC fill:#37474f,stroke:#263238,color:#fff
+    style NAS fill:#37474f,stroke:#263238,color:#fff
+    style RP fill:#37474f,stroke:#263238,color:#fff
+    
+    %% Styling - VMs and LXCs
+    style Pihole2 fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style TwinGate fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style BookstackVM fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style MkDocsVM fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style TrueNAS fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Dockerhost1 fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Dockerhost2 fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Dockerhost3 fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Win11 fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style HomeAssistant fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Netbox fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style CML fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Ollama fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Kali fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Parrot fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style SecurityOnion fill:#e8eaf6,stroke:#9fa8da,color:#333
+    style Podmanhost1 fill:#e8eaf6,stroke:#9fa8da,color:#333
 ```
 
 </div>
