@@ -66,12 +66,12 @@ graph TD
     %% Proxmox Hosts with nested VMs/Containers
     subgraph ProxmoxNode1[Proxmox Node 1]
         OPNsense[OPNsense VM<br/>Firewall]
-        Pihole[DNS 1]
+        Pihole1[DNS 1]
     end
     
     subgraph ProxmoxNode2[Proxmox Node 2]
-        Pihole[DNS 2]
-        TwinGate[Tunnel
+        Pihole2[DNS 2]
+        TwinGate[Tunnel]
         Bookstack[Documentation]
         MkDocs[LXC]
         TrueNAS[VM]
