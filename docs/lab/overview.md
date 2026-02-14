@@ -89,7 +89,7 @@ I treat my home network like a mini-enterprise:
 
 Currently working on:
 
-* **Network Automation:** Developing Ansible playbooks for automated Cisco device configuration and compliance checking
+* **Network Automation:** Developing Python scripts for automated Cisco device configuration and compliance checking
 * **Infrastructure as Code:** Implementing Terraform for automated Proxmox VM provisioning
 * **Monitoring Stack:** Deploying centralized logging with ELK stack across all VLANs
 
