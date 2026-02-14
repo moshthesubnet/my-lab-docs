@@ -4,7 +4,7 @@
 
 I am a Network Support Specialist and mid-career professional who successfully transitioned into IT from a non-technical background. My journey is defined by a relentless drive to learn—illustrated by my rapid acquisition of industry certifications and the complex, enterprise-grade homelab I maintain to sharpen my skills.
 
-Currently, I am pursuing a **B.S. in Network Engineering and Security (Cisco Track)** at **Western Governors University**.
+Currently, I am pursuing a **B.S. in Cloud and Network Engineering (Cisco) ** at **Western Governors University**.
 
 ---
 
