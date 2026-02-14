@@ -60,6 +60,7 @@ graph TB
     %% Proxmox Host containing OPNsense
     subgraph ProxmoxNode1["Proxmox Node 1"]
         OPNsense["OPNsense VM<br/>Firewall/Router"]
+        Pihole1["DNS 1"]
     end
     
     %% Main Switch
