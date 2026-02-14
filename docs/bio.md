@@ -37,7 +37,7 @@ I actively validate my skills through industry-recognized certifications.
 | Certification | Issuing Organization | Date Earned |
 | :--- | :--- | :--- |
 | **CompTIA Cloud+** | CompTIA | Dec 2025 |
-| **Cisco Certified Cybersecurity Associate (CBROPS)** | Cisco | June 2025 |
+| **CCNA Cybersecurity** | Cisco | June 2025 |
 | **Cisco Certified Network Associate (CCNA)** | Cisco | Feb 2025 |
 | **ITIL Foundation** | AXELOS | June 2024 |
 | **LPI Linux Essentials** | LPI | May 2024 |
