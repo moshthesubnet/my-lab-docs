@@ -77,4 +77,4 @@ I actively validate my skills through industry-recognized certifications.
 
 ## 🔗 Technical Projects
 
-Interested in my hands-on work? Check out my [Projects page](../projects/projects.md) for detailed documentation of my homelab implementations, including network architecture, security hardening, and automation workflows.
+Interested in my hands-on work? Check out my [Projects page](/projects/projects.md) for detailed documentation of my homelab implementations, including network architecture, security hardening, and automation workflows.
