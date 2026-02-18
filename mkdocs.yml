@@ -27,6 +27,7 @@ nav:
           - VLAN Segmentation: projects/VLAN_segmentation.md
           - Network Topology Diagram: projects/network-topology-diagram.html
           - Local AI Coding Agent: projects/Local_AI_Coding_Agent.md
+          - 2-Area OSPF Lab: projects/ospf_lab.md
 
 extra:
   social:
