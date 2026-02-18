@@ -4,9 +4,9 @@
   <img src="assets/github_profile.png" alt="Skyler King" width="350" style="border-radius: 50%; margin: 30px 0; border: 4px solid #b84fff; box-shadow: 0 8px 24px rgba(184,79,255,0.4);">
 </div>
 
-I'm <strong>Skyler King</strong>–a Cloud/Network Engineering student, homelab enthusiast, and emo/punk rock fan.
+<p>I'm <strong>Skyler King</strong>–a Cloud/Network Engineering student, homelab enthusiast, and emo/punk rock fan.</p>
 
-I document my journey from "it works on my machine" to enterprise-grade network engineering here. Whether it's breaking OSPF in the lab or fixing critical infrastructure in production, this is where I write it down.
+<p>I document my journey from "it works on my machine" to enterprise-grade network engineering here. Whether it's breaking OSPF in the lab or fixing critical infrastructure in production, this is where I write it down.</p>
 
 ---
 
