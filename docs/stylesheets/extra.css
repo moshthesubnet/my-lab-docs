@@ -55,11 +55,11 @@
 
 /* Prevent AOS from animating inside table cells */
 .md-content table td,
-.md-content table th {
+.md-content table th,
+.md-content table tr {
   min-width: 120px;
   padding: 8px 12px;
   animation: none !important;
   opacity: 1 !important;
   transform: none !important;
-}
 }
