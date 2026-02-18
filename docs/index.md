@@ -1,6 +1,6 @@
 # :material-guitar-electric: :material-home-lightning-bolt-outline: Welcome to Mosh The Subnet
 
-<div align="center">
+<div data-aos="zoom-in" data-aos-duration="800" align="center">
   <img src="assets/github_profile.png" alt="Skyler King" width="350" style="border-radius: 50%; margin: 30px 0; border: 4px solid #b84fff; box-shadow: 0 8px 24px rgba(184,79,255,0.4);">
 </div>
 
