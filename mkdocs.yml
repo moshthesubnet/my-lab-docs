@@ -67,11 +67,11 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
-  - search  # (Keep this if you already have it, it's the default MkDocs search)
-  - social
-      cards_layout_options:
-        background_color: "#1e1e2e"  # matches your slate background
-        color: "#b84fff"             # your purple accent
+  - search:  # (Keep this if you already have it, it's the default MkDocs search)
+  - social:
+      cards_layout_options:      # ← needs to be indented under social:
+        background_color: "#1e1e2e"
+        color: "#b84fff"
         font_family: Roboto
   - glightbox:
       touchNavigation: true
