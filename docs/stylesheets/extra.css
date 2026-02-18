@@ -24,3 +24,21 @@
   border-color: #00e676; /* Neon Green */
   box-shadow: 0 0 12px rgba(0, 230, 118, 0.4);
 }
+
+.md-content table th:nth-child(1),
+.md-content table td:nth-child(1) {
+  width: 100px;
+  min-width: 100px;
+}
+
+.md-content table th:nth-child(2),
+.md-content table td:nth-child(2) {
+  width: 300px;
+  min-width: 300px;
+}
+
+.md-content table th:nth-child(3),
+.md-content table td:nth-child(3) {
+  width: 100px;
+  min-width: 100px;
+}
