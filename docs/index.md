@@ -31,7 +31,9 @@
 ## 📜 Certifications
 
 *Validated skills. No paper tigers here.*
+
 <div class="certifications-table">
+  
 | Badge | Certification | Date |
 | :--- | :--- | :--- |
 | **CLOUD+** | CompTIA Cloud+ | Dec 2025 |
@@ -40,7 +42,9 @@
 | **ITIL 4** | ITIL Foundation | Jun 2024 |
 | **LPI** | Linux Essentials | May 2024 |
 | **A+** | CompTIA A+ | Mar 2024 |
+
 </div>
+
 ---
 
 ## 🛠️ The Stack (Lab & Prod)
