@@ -57,3 +57,11 @@
     transform: translateY(0);
   }
 }
+
+.md-content table td,
+.md-content table th,
+.md-content table tr {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
