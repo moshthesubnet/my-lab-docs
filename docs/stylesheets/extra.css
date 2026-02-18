@@ -3,46 +3,41 @@
 .md-typeset details {
   border-width: 2px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(63, 81, 181, 0.2); /* Soft glow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 0 15px rgba(63, 81, 181, 0.2);
   border-left-width: .4rem;
 }
 
 /* Specific styling for 'info' boxes */
 .md-typeset .admonition.info {
-  border-color: #3f51b5; /* Your Indigo primary color */
+  border-color: #3f51b5;
   box-shadow: 0 0 12px rgba(63, 81, 181, 0.4);
 }
 
 /* Specific styling for 'bug' (Troubleshooting) boxes */
 .md-typeset .admonition.bug {
-  border-color: #ff1744; /* A punk rock red/pink */
+  border-color: #ff1744;
   box-shadow: 0 0 12px rgba(255, 23, 68, 0.4);
 }
 
 /* Specific styling for 'tip' boxes */
 .md-typeset .admonition.tip {
-  border-color: #00e676; /* Neon Green */
+  border-color: #00e676;
   box-shadow: 0 0 12px rgba(0, 230, 118, 0.4);
 }
 
-.md-content table th:nth-child(1),
-.md-content table td:nth-child(1) {
-  width: 100px;
-  min-width: 100px;
+/* Make all tables scrollable horizontally instead of wrapping */
+.md-content table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.md-content table th:nth-child(2),
-.md-content table td:nth-child(2) {
-  width: 300px;
-  min-width: 300px;
+/* Certifications table exempt from nowrap */
+.certifications-table table {
+  white-space: normal;
 }
 
-.md-content table th:nth-child(3),
-.md-content table td:nth-child(3) {
-  width: 100px;
-  min-width: 100px;
-}
-
+/* Page load animation */
 .md-content {
   animation: fadeInPage 0.8s ease-in-out;
 }
@@ -58,6 +53,7 @@
   }
 }
 
+/* Prevent AOS from animating inside table cells */
 .md-content table td,
 .md-content table th,
 .md-content table tr {
