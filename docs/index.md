@@ -28,12 +28,12 @@
 
 ---
 
-## 📜 Certifications
+## 🗒️ Certifications
 
 *Validated skills. No paper tigers here.*
 
-<div class="certifications-table">
-  
+<div class="certifications-table" markdown>
+
 | Badge | Certification | Date |
 | :--- | :--- | :--- |
 | **CLOUD+** | CompTIA Cloud+ | Dec 2025 |
