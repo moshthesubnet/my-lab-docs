@@ -69,6 +69,10 @@ markdown_extensions:
 plugins:
   - search  # (Keep this if you already have it, it's the default MkDocs search)
   - social
+      cards_layout_options:
+        background_color: "#1e1e2e"  # matches your slate background
+        color: "#b84fff"             # your purple accent
+        font_family: Roboto
   - glightbox:
       touchNavigation: true
       loop: false
