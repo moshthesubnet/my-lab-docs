@@ -68,6 +68,7 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
   - search  # (Keep this if you already have it, it's the default MkDocs search)
+  - social
   - glightbox:
       touchNavigation: true
       loop: false
