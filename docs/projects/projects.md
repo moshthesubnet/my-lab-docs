@@ -15,7 +15,7 @@ Deployed a fully localized, privacy-first AI coding assistant for secure, termin
 **Key Highlights:**
 
 - Deployed Ollama on an Ubuntu Server virtual machine
-- Hosted the Qwen2.5-Coder:14B model locally
+- Hosted the Qwen2.5-Coder:7B model locally
 - Integrated Aider on the local workstation for seamless terminal access
 - Focused on security by utilizing a scoped coding tool rather than OS-level agents (e.g., OpenClaw)
 - Automated Python scripting workflows for CCNA lab scenarios
