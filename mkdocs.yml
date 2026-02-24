@@ -7,6 +7,9 @@ theme:
     - scheme: slate
       primary: red
       accent: deep purple
+  fonts:
+    text: Roboto
+    code: Fira Code
   features:
     - navigation.tabs
     - search.suggest
