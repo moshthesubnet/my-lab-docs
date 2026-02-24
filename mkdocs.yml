@@ -67,7 +67,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
-  - search:  # (Keep this if you already have it, it's the default MkDocs search)
+  - search:  
   - social:
       cards_layout_options:      # ← needs to be indented under social:
         background_color: "#1e1e2e"
