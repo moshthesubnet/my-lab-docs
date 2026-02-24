@@ -3,7 +3,7 @@ site_url: https://moshthesubnet.com
 
 theme:
   name: material
-  logo: assets/logo_2.png
+  logo: assets/logo_circle.png
   favicon: assets/favicon.png
   palette: 
     - scheme: slate
