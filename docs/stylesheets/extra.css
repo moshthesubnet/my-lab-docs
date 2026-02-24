@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+:root > * {
+  /* This changes the top navigation bar and main headers */
+  --md-primary-fg-color: #240046; /* Example: Cyber Violet */
+  
+  /* This changes your links, buttons, and highlights */
+  --md-accent-fg-color:  #000033; /* Example: Midnight Hacker */
+}
+
 /* Custom Admonition Glow */
 .md-typeset .admonition, 
 .md-typeset details {
