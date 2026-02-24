@@ -7,8 +7,8 @@ theme:
   favicon: assets/favicon.png
   palette: 
     - scheme: slate
-      primary: deep purple
-      accent: electric blue
+      primary: electric blue
+      accent: deep purple
   fonts:
     text: Roboto
     code: Fira Code
