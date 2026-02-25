@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-:root > * {
+[data-md-color-scheme="slate"] {
   /* This changes the top navigation bar and main headers */
-  --md-primary-fg-color: #240046; /* Cyber Violet */
+  --md-primary-fg-color: #240046 !important; 
   
   /* This changes your links, buttons, and highlights */
-  --md-accent-fg-color:  #00E5FF; /* Electric Blue */
+  --md-accent-fg-color:  #00E5FF !important; 
 }
 
 /* Makes the active (currently selected) page link Electric Blue */
