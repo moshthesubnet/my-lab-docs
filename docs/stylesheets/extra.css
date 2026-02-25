@@ -2,12 +2,28 @@
 
 :root > * {
   /* This changes the top navigation bar and main headers */
-  --md-primary-fg-color: #240046; /* Example: Cyber Violet */
+  --md-primary-fg-color: #240046; /* Cyber Violet */
   
   /* This changes your links, buttons, and highlights */
-  --md-accent-fg-color:  #00E5FF;
+  --md-accent-fg-color:  #00E5FF; /* Electric Blue */
 }
 
+/* Makes the active (currently selected) page link Electric Blue */
+.md-nav__link--active {
+  color: #00E5FF !important;
+  font-weight: bold;
+}
+
+/* Makes the inactive links a bright, readable white so they don't fade away */
+.md-nav__link {
+  color: #ffffff !important; 
+}
+
+/* Adds a bright blue glow to links when you hover over them with your mouse */
+.md-nav__link:hover {
+  color: #00E5FF !important;
+  transition: color 0.2s ease-in-out;
+}
 /* Custom Admonition Glow */
 .md-typeset .admonition, 
 .md-typeset details {
