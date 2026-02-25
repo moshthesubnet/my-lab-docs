@@ -94,8 +94,15 @@
 h1, h2, h3, h4, h5, h6, .md-header__button.md-logo, .md-nav__title {
   font-family: 'Bebas Neue', sans-serif !important;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-weight: normal; /* Bebas Neue is already thick */
+  
+  /* Forces the browser to stop applying "faux bold" to smaller headers */
+  font-weight: 400 !important; 
+  
+  /* Increased from 1.5px to 2px to give the letters more breathing room */
+  letter-spacing: 2px !important; 
+  
+  /* Adds a tiny bit of extra height between multi-line headers */
+  line-height: 1.2 !important; 
 }
 
 /* Optional: Make the site title in the header slightly larger to stand out */
