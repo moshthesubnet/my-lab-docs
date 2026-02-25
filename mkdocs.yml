@@ -85,7 +85,6 @@ plugins:
       slide_effect: slide
       width: 100%
       height: auto
-      zoomable: true
       zoomFactor: 2  # Allows users to double-click to zoom in closer
   
 copyright: |
